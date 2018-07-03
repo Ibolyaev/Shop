@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FC9D20EF621400886DC8 /* AppDelegate.swift */; };
-		30B2FCA020EF621400886DC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FC9F20EF621400886DC8 /* ViewController.swift */; };
-		30B2FCA320EF621400886DC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA120EF621400886DC8 /* Main.storyboard */; };
 		30B2FCA520EF621400886DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA420EF621400886DC8 /* Assets.xcassets */; };
 		30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */; };
 		30B2FCB320EF621400886DC8 /* IbolyaevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCB220EF621400886DC8 /* IbolyaevTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		30B2FC9A20EF621400886DC8 /* Ibolyaev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibolyaev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2FC9D20EF621400886DC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30B2FC9F20EF621400886DC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30B2FCA220EF621400886DC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30B2FCA420EF621400886DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B2FCA720EF621400886DC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B2FCA920EF621400886DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +93,11 @@
 		30B2FC9C20EF621400886DC8 /* Ibolyaev */ = {
 			isa = PBXGroup;
 			children = (
-				30B2FC9D20EF621400886DC8 /* AppDelegate.swift */,
-				30B2FC9F20EF621400886DC8 /* ViewController.swift */,
-				30B2FCA120EF621400886DC8 /* Main.storyboard */,
-				30B2FCA420EF621400886DC8 /* Assets.xcassets */,
-				30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */,
-				30B2FCA920EF621400886DC8 /* Info.plist */,
+				30B2FCCB20F0989800886DC8 /* App */,
+				30B2FCCF20F098E200886DC8 /* Flows */,
+				30B2FCD020F098F100886DC8 /* Core */,
+				30B2FCD120F098FD00886DC8 /* Resources */,
+				30B2FCD220F0990A00886DC8 /* Environments */,
 			);
 			path = Ibolyaev;
 			sourceTree = "<group>";
@@ -123,6 +118,69 @@
 				30B2FCBF20EF621400886DC8 /* Info.plist */,
 			);
 			path = IbolyaevUITests;
+			sourceTree = "<group>";
+		};
+		30B2FCCB20F0989800886DC8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				30B2FC9D20EF621400886DC8 /* AppDelegate.swift */,
+				30B2FCCE20F098D400886DC8 /* Assembly */,
+				30B2FCCD20F098BD00886DC8 /* Entity */,
+				30B2FCCC20F098AD00886DC8 /* BussinessLogic */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		30B2FCCC20F098AD00886DC8 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		30B2FCCD20F098BD00886DC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		30B2FCCE20F098D400886DC8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		30B2FCCF20F098E200886DC8 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		30B2FCD020F098F100886DC8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		30B2FCD120F098FD00886DC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30B2FCA420EF621400886DC8 /* Assets.xcassets */,
+				30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30B2FCD220F0990A00886DC8 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				30B2FCA920EF621400886DC8 /* Info.plist */,
+			);
+			path = Environments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +292,6 @@
 			files = (
 				30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */,
 				30B2FCA520EF621400886DC8 /* Assets.xcassets in Resources */,
-				30B2FCA320EF621400886DC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B2FCA020EF621400886DC8 /* ViewController.swift in Sources */,
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		30B2FCA120EF621400886DC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30B2FCA220EF621400886DC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Ibolyaev/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ibolyaev/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibo.Ibolyaev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Ibolyaev/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ibolyaev/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibo.Ibolyaev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
