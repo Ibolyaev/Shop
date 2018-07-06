@@ -1,0 +1,6 @@
+framework module Pods_IbolyaevTests {
+  umbrella header "Pods-IbolyaevTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
