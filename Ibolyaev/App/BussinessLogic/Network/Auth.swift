@@ -5,7 +5,7 @@ class Auth: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let configuration: Configuration
     
     init(
         errorParser: AbstractErrorParser,
@@ -15,6 +15,7 @@ class Auth: AbstractRequestFactory {
         self.errorParser = errorParser
         self.sessionManager = sessionManager
         self.queue = queue
+        self.configuration = Configuration()
     }
 }
 extension Auth: AuthRequestFactory {
@@ -24,19 +25,18 @@ extension Auth: AuthRequestFactory {
         password: String,
         completionHandler: @escaping (DataResponse<LoginResult>) -> Void) {
         
-        let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+        let requestModel = Login(baseUrl: configuration.baseUrl, login: userName, password: password)
         self.request(reques: requestModel, completionHandler: completionHandler)
     }
     
     func signUp(user: User,
-                completionHandler: @escaping (DataResponse<SignUpResult>) -> Void) {
-        
-        let requestModel = SignUp(baseUrl: baseUrl, user: user)
+                completionHandler: @escaping (DataResponse<SignUpResult>) -> Void) {        
+        let requestModel = SignUp(baseUrl: configuration.baseUrl, user: user)
         self.request(reques: requestModel, completionHandler: completionHandler)
     }
     
     func logout(user: User, completionHandler: @escaping (DataResponse<LogoutResult>) -> Void) {
-        let requestModel = Logout(baseUrl: baseUrl, user: user)
+        let requestModel = Logout(baseUrl: configuration.baseUrl, user: user)
         self.request(reques: requestModel, completionHandler: completionHandler)
     }
 }
