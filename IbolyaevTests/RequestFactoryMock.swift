@@ -1,8 +1,10 @@
 import Alamofire
+@testable import Ibolyaev
 
-class RequestFactory {    
+class RequestFactoryMock {
+    
     func makeErrorParser() -> AbstractErrorParser {
-        return ErrorParser()
+        return ErrorParserStub()
     }
     
     lazy var commonSessionManager: SessionManager = {
@@ -37,4 +39,3 @@ class RequestFactory {
         )
     }
 }
-

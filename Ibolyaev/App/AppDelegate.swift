@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    let requestFactory = RequestFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        /*
         // Auth
         let auth = requestFactory.makeAuthRequestFatory()
         auth.login(userName: "Somebody", password: "mypassword") { response in
@@ -48,6 +49,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         newUser.bio = "Tratata"
         let userDataRequest = requestFactory.makeUserDataRequestFatory()
         userDataRequest.update(user: newUser) { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+ */
+        // Get product list
+        let productsRequest = requestFactory.makeProductsRequestFactory()
+        productsRequest.getList(category: 1, page: 1) { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        productsRequest.getWith(id: 1) {
+            response in
             switch response.result {
             case .success(let login):
                 print(login)

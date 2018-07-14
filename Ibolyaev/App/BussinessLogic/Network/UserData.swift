@@ -5,7 +5,7 @@ class UserData: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let configuration: Configuration
     
     init(
         errorParser: AbstractErrorParser,
@@ -15,12 +15,13 @@ class UserData: AbstractRequestFactory {
         self.errorParser = errorParser
         self.sessionManager = sessionManager
         self.queue = queue
+        self.configuration = Configuration()
     }
 }
 
 extension UserData: UserDataRequestFactory {
     func update(user: User, completionHandler: @escaping (DataResponse<UserDataUpdateResult>) -> Void) {
-        let requestModel = UserDataUpdate(baseUrl: baseUrl, user: user)
+        let requestModel = UserDataUpdate(baseUrl: configuration.baseUrl, user: user)
         self.request(reques: requestModel, completionHandler: completionHandler)
     }
     struct UserDataUpdate: RequestRouter {
