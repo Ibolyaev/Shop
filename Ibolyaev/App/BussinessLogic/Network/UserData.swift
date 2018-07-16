@@ -27,7 +27,7 @@ extension UserData: UserDataRequestFactory {
     struct UserDataUpdate: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "changeUserData.json"
+        let path: String = Api.changeUserData
         let user: User
         
         var parameters: Parameters? {

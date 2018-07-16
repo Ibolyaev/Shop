@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3036EA5E20FB8DA900B40B9A /* addReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2420FB7DAE00886DC8 /* addReview.json */; };
+		3036EA5F20FB8DA900B40B9A /* addToBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2220FB7DAD00886DC8 /* addToBasket.json */; };
+		3036EA6020FB8DA900B40B9A /* approveReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2020FB7DAD00886DC8 /* approveReview.json */; };
+		3036EA6120FB8DA900B40B9A /* catalogData.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2620FB7DAF00886DC8 /* catalogData.json */; };
+		3036EA6220FB8DA900B40B9A /* changeUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2820FB7DB000886DC8 /* changeUserData.json */; };
+		3036EA6320FB8DA900B40B9A /* deleteFromBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2A20FB7DB100886DC8 /* deleteFromBasket.json */; };
+		3036EA6420FB8DA900B40B9A /* getBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD1F20FB7DAC00886DC8 /* getBasket.json */; };
+		3036EA6520FB8DA900B40B9A /* getGoodById.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2120FB7DAD00886DC8 /* getGoodById.json */; };
+		3036EA6620FB8DA900B40B9A /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2920FB7DB000886DC8 /* logout.json */; };
+		3036EA6720FB8DA900B40B9A /* registerUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2320FB7DAE00886DC8 /* registerUser.json */; };
+		3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2520FB7DAF00886DC8 /* removeReview.json */; };
+		3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */; };
+		3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */; };
 		30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FC9D20EF621400886DC8 /* AppDelegate.swift */; };
 		30B2FCA520EF621400886DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA420EF621400886DC8 /* Assets.xcassets */; };
 		30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */; };
-		30B2FCB320EF621400886DC8 /* IbolyaevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCB220EF621400886DC8 /* IbolyaevTests.swift */; };
 		30B2FCBE20EF621400886DC8 /* IbolyaevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCBD20EF621400886DC8 /* IbolyaevUITests.swift */; };
 		30B2FCF520F8995200886DC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCF320F8995200886DC8 /* User.swift */; };
 		30B2FCF620F8995200886DC8 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCF420F8995200886DC8 /* NetworkResponse.swift */; };
@@ -31,6 +43,21 @@
 		30B2FD1520FA1A5500886DC8 /* RequestFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FCF120F8994200886DC8 /* RequestFactoryMock.swift */; };
 		30B2FD1720FA1B0700886DC8 /* ErrorParserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FD1620FA1B0700886DC8 /* ErrorParserStub.swift */; };
 		30B2FD1920FA256F00886DC8 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FD1820FA256F00886DC8 /* RequestFactory.swift */; };
+		30B2FD1B20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FD1A20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift */; };
+		30B2FD2B20FB7DB100886DC8 /* getBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD1F20FB7DAC00886DC8 /* getBasket.json */; };
+		30B2FD2C20FB7DB200886DC8 /* approveReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2020FB7DAD00886DC8 /* approveReview.json */; };
+		30B2FD2D20FB7DB200886DC8 /* getGoodById.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2120FB7DAD00886DC8 /* getGoodById.json */; };
+		30B2FD2E20FB7DB200886DC8 /* addToBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2220FB7DAD00886DC8 /* addToBasket.json */; };
+		30B2FD2F20FB7DB200886DC8 /* registerUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2320FB7DAE00886DC8 /* registerUser.json */; };
+		30B2FD3020FB7DB200886DC8 /* addReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2420FB7DAE00886DC8 /* addReview.json */; };
+		30B2FD3120FB7DB200886DC8 /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2520FB7DAF00886DC8 /* removeReview.json */; };
+		30B2FD3220FB7DB200886DC8 /* catalogData.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2620FB7DAF00886DC8 /* catalogData.json */; };
+		30B2FD3420FB7DB200886DC8 /* changeUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2820FB7DB000886DC8 /* changeUserData.json */; };
+		30B2FD3520FB7DB200886DC8 /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2920FB7DB000886DC8 /* logout.json */; };
+		30B2FD3620FB7DB200886DC8 /* deleteFromBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2A20FB7DB100886DC8 /* deleteFromBasket.json */; };
+		30B2FD3A20FB856C00886DC8 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD3920FB856C00886DC8 /* login.json */; };
+		30B2FD3B20FB85F600886DC8 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD3920FB856C00886DC8 /* login.json */; };
+		30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FD3C20FB871700886DC8 /* Constants.swift */; };
 		33FBC8A4A9B889315BEC73B3 /* Pods_IbolyaevUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5B2C5C011B5A7E0A5E8DD1 /* Pods_IbolyaevUITests.framework */; };
 		AA3195C01AF7F6BBDD03069E /* Pods_IbolyaevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014255F7AC60A366F787A8F1 /* Pods_IbolyaevTests.framework */; };
 		BAE0C8AEB6BF00296D25E4F4 /* Pods_Ibolyaev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */; };
@@ -59,13 +86,14 @@
 		1480EC690EDAADAEEA352BD2 /* Pods-IbolyaevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D5B2C5C011B5A7E0A5E8DD1 /* Pods_IbolyaevUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IbolyaevUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD4DD210388A0F960C772BC /* Pods-Ibolyaev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibolyaev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev.debug.xcconfig"; sourceTree = "<group>"; };
+		3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRequestFactoryTest.swift; sourceTree = "<group>"; };
+		3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactoryTest.swift; sourceTree = "<group>"; };
 		30B2FC9A20EF621400886DC8 /* Ibolyaev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibolyaev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2FC9D20EF621400886DC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B2FCA420EF621400886DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B2FCA720EF621400886DC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B2FCA920EF621400886DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B2FCAE20EF621400886DC8 /* IbolyaevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbolyaevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30B2FCB220EF621400886DC8 /* IbolyaevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbolyaevTests.swift; sourceTree = "<group>"; };
 		30B2FCB420EF621400886DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B2FCB920EF621400886DC8 /* IbolyaevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbolyaevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2FCBD20EF621400886DC8 /* IbolyaevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbolyaevUITests.swift; sourceTree = "<group>"; };
@@ -89,6 +117,20 @@
 		30B2FD1320F9E80100886DC8 /* AuthRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactoryTest.swift; sourceTree = "<group>"; };
 		30B2FD1620FA1B0700886DC8 /* ErrorParserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParserStub.swift; sourceTree = "<group>"; };
 		30B2FD1820FA256F00886DC8 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		30B2FD1A20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OHHTTPStubsResponse+JSON.swift"; sourceTree = "<group>"; };
+		30B2FD1F20FB7DAC00886DC8 /* getBasket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getBasket.json; sourceTree = "<group>"; };
+		30B2FD2020FB7DAD00886DC8 /* approveReview.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = approveReview.json; sourceTree = "<group>"; };
+		30B2FD2120FB7DAD00886DC8 /* getGoodById.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getGoodById.json; sourceTree = "<group>"; };
+		30B2FD2220FB7DAD00886DC8 /* addToBasket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addToBasket.json; sourceTree = "<group>"; };
+		30B2FD2320FB7DAE00886DC8 /* registerUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = registerUser.json; sourceTree = "<group>"; };
+		30B2FD2420FB7DAE00886DC8 /* addReview.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addReview.json; sourceTree = "<group>"; };
+		30B2FD2520FB7DAF00886DC8 /* removeReview.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = removeReview.json; sourceTree = "<group>"; };
+		30B2FD2620FB7DAF00886DC8 /* catalogData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalogData.json; sourceTree = "<group>"; };
+		30B2FD2820FB7DB000886DC8 /* changeUserData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = changeUserData.json; sourceTree = "<group>"; };
+		30B2FD2920FB7DB000886DC8 /* logout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logout.json; sourceTree = "<group>"; };
+		30B2FD2A20FB7DB100886DC8 /* deleteFromBasket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteFromBasket.json; sourceTree = "<group>"; };
+		30B2FD3920FB856C00886DC8 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		30B2FD3C20FB871700886DC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ibolyaev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9A216D6E3E3B3C8FF3333E /* Pods-IbolyaevUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A0969F44DEBE7CA03D452C15 /* Pods-IbolyaevUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +165,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3036EA6920FB8E1800B40B9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30B2FD1A20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3036EA6A20FB8E3E00B40B9A /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
 		30B2FC9120EF621400886DC8 = {
 			isa = PBXGroup;
 			children = (
@@ -160,11 +217,15 @@
 		30B2FCB120EF621400886DC8 /* IbolyaevTests */ = {
 			isa = PBXGroup;
 			children = (
+				3036EA6A20FB8E3E00B40B9A /* Environments */,
+				3036EA6920FB8E1800B40B9A /* Helpers */,
+				30B2FD1C20FB7C7500886DC8 /* Resources */,
 				30B2FCF120F8994200886DC8 /* RequestFactoryMock.swift */,
 				30B2FD1620FA1B0700886DC8 /* ErrorParserStub.swift */,
-				30B2FCB220EF621400886DC8 /* IbolyaevTests.swift */,
-				30B2FCB420EF621400886DC8 /* Info.plist */,
 				30B2FD1320F9E80100886DC8 /* AuthRequestFactoryTest.swift */,
+				3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */,
+				3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */,
+				30B2FCB420EF621400886DC8 /* Info.plist */,
 			);
 			path = IbolyaevTests;
 			sourceTree = "<group>";
@@ -203,6 +264,7 @@
 				30B2FCF420F8995200886DC8 /* NetworkResponse.swift */,
 				30B2FCF320F8995200886DC8 /* User.swift */,
 				30B2FD0F20F8A13400886DC8 /* Product.swift */,
+				30B2FD3C20FB871700886DC8 /* Constants.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -273,6 +335,25 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		30B2FD1C20FB7C7500886DC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30B2FD2420FB7DAE00886DC8 /* addReview.json */,
+				30B2FD2220FB7DAD00886DC8 /* addToBasket.json */,
+				30B2FD2020FB7DAD00886DC8 /* approveReview.json */,
+				30B2FD3920FB856C00886DC8 /* login.json */,
+				30B2FD2620FB7DAF00886DC8 /* catalogData.json */,
+				30B2FD2820FB7DB000886DC8 /* changeUserData.json */,
+				30B2FD2A20FB7DB100886DC8 /* deleteFromBasket.json */,
+				30B2FD1F20FB7DAC00886DC8 /* getBasket.json */,
+				30B2FD2120FB7DAD00886DC8 /* getGoodById.json */,
+				30B2FD2920FB7DB000886DC8 /* logout.json */,
+				30B2FD2320FB7DAE00886DC8 /* registerUser.json */,
+				30B2FD2520FB7DAF00886DC8 /* removeReview.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		33C52B11DC4843D7A32D851C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +407,7 @@
 				30B2FCAA20EF621400886DC8 /* Sources */,
 				30B2FCAB20EF621400886DC8 /* Frameworks */,
 				30B2FCAC20EF621400886DC8 /* Resources */,
+				13028BAF26DF9ADDCAA624AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +489,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3036EA5E20FB8DA900B40B9A /* addReview.json in Resources */,
+				3036EA5F20FB8DA900B40B9A /* addToBasket.json in Resources */,
+				3036EA6020FB8DA900B40B9A /* approveReview.json in Resources */,
+				3036EA6120FB8DA900B40B9A /* catalogData.json in Resources */,
+				3036EA6220FB8DA900B40B9A /* changeUserData.json in Resources */,
+				3036EA6320FB8DA900B40B9A /* deleteFromBasket.json in Resources */,
+				3036EA6420FB8DA900B40B9A /* getBasket.json in Resources */,
+				3036EA6520FB8DA900B40B9A /* getGoodById.json in Resources */,
+				3036EA6620FB8DA900B40B9A /* logout.json in Resources */,
+				3036EA6720FB8DA900B40B9A /* registerUser.json in Resources */,
+				3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */,
+				30B2FD3B20FB85F600886DC8 /* login.json in Resources */,
 				30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */,
 				30B2FCA520EF621400886DC8 /* Assets.xcassets in Resources */,
 			);
@@ -416,6 +510,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B2FD2B20FB7DB100886DC8 /* getBasket.json in Resources */,
+				30B2FD3120FB7DB200886DC8 /* removeReview.json in Resources */,
+				30B2FD2D20FB7DB200886DC8 /* getGoodById.json in Resources */,
+				30B2FD3220FB7DB200886DC8 /* catalogData.json in Resources */,
+				30B2FD2C20FB7DB200886DC8 /* approveReview.json in Resources */,
+				30B2FD3020FB7DB200886DC8 /* addReview.json in Resources */,
+				30B2FD3420FB7DB200886DC8 /* changeUserData.json in Resources */,
+				30B2FD3520FB7DB200886DC8 /* logout.json in Resources */,
+				30B2FD2E20FB7DB200886DC8 /* addToBasket.json in Resources */,
+				30B2FD3620FB7DB200886DC8 /* deleteFromBasket.json in Resources */,
+				30B2FD2F20FB7DB200886DC8 /* registerUser.json in Resources */,
+				30B2FD3A20FB856C00886DC8 /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +535,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13028BAF26DF9ADDCAA624AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AC64906224CB6F969A11ACB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +649,7 @@
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
+				30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,10 +657,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B2FD1B20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift in Sources */,
 				30B2FD1520FA1A5500886DC8 /* RequestFactoryMock.swift in Sources */,
 				30B2FD1720FA1B0700886DC8 /* ErrorParserStub.swift in Sources */,
+				3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */,
+				3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */,
 				30B2FD1420F9E80100886DC8 /* AuthRequestFactoryTest.swift in Sources */,
-				30B2FCB320EF621400886DC8 /* IbolyaevTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

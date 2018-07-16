@@ -39,7 +39,7 @@ extension Products: ProductsRequestFactory {
     struct ProductById: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "getGoodById.json"
+        let path: String = Api.getGoodById
         
         var parameters: Parameters? {
             return [:]
@@ -49,7 +49,7 @@ extension Products: ProductsRequestFactory {
     struct ProductsGetList: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "catalogData.json"
+        let path: String = Api.catalogData
         let pageNumber: Int
         let category: Int
         

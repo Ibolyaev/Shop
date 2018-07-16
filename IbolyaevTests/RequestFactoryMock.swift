@@ -1,4 +1,6 @@
 import Alamofire
+import OHHTTPStubs
+
 @testable import Ibolyaev
 
 class RequestFactoryMock {
@@ -9,6 +11,7 @@ class RequestFactoryMock {
     
     lazy var commonSessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.ephemeral
+        OHHTTPStubs.isEnabled(for: configuration)
         let manager = SessionManager(configuration: configuration)
         return manager
     }()

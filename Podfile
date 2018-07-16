@@ -11,6 +11,7 @@ target 'Ibolyaev' do
   target 'IbolyaevTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OHHTTPStubs/Swift'
   end
 
   target 'IbolyaevUITests' do

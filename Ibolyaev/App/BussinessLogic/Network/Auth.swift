@@ -46,7 +46,7 @@ extension Auth {
     struct Login: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
+        let path: String = Api.login
         
         let login: String
         let password: String
@@ -65,7 +65,7 @@ extension Auth {
     struct Logout: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "logout.json"
+        let path: String = Api.logout
         
         let user: User
         
@@ -82,7 +82,7 @@ extension Auth {
     struct SignUp: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "registerUser.json"
+        let path: String = Api.registerUser
         
         let user: User
         

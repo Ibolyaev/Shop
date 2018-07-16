@@ -8,5 +8,5 @@
 
 import Foundation
 class Configuration {
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: Api.url)!
 }
