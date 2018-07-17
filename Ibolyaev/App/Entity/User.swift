@@ -1,4 +1,6 @@
 import Foundation
+
+// struct User - Store information about logged in user or user data for future registration
 struct User: Codable {
     let id: Int
     let login: String

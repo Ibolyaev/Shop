@@ -1,4 +1,5 @@
 import Alamofire
+import OHHTTPStubs
 @testable import Ibolyaev
 
 class RequestFactoryMock {
@@ -9,6 +10,7 @@ class RequestFactoryMock {
     
     lazy var commonSessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.ephemeral
+        OHHTTPStubs.isEnabled(for: configuration)
         let manager = SessionManager(configuration: configuration)
         return manager
     }()
@@ -23,6 +25,7 @@ class RequestFactoryMock {
             queue: sessionQueue
         )
     }
+    
     func makeUserDataRequestFatory() -> UserDataRequestFactory {
         let errorParser = makeErrorParser()
         return UserData(
@@ -31,11 +34,26 @@ class RequestFactoryMock {
             queue: sessionQueue
         )
     }
+    
     func makeProductsRequestFactory() -> ProductsRequestFactory {
         let errorParser = makeErrorParser()
-        return Products(errorParser: errorParser,
-                        sessionManager: commonSessionManager,
-                        queue: sessionQueue
+        return Products(
+            errorParser: errorParser,
+            sessionManager: commonSessionManager,
+            queue: sessionQueue
         )
     }
+    
+    func makeReviewRequestFactory() -> ReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        /* Не мойму почему ошибка происходит
+         Error:
+         Cannot convert return expression of type 'Review' to return type 'ReviewRequestFactory'*/
+        return Review(
+            errorParser: errorParser,
+            sessionManager: commonSessionManager,
+            queue: sessionQueue
+        )
+    }
+    
 }

@@ -1,11 +1,3 @@
-//
-//  GoodsRequestFactory.swift
-//  Ibolyaev
-//
-//  Created by Ronin on 13/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import Alamofire
 
 protocol ProductsRequestFactory {

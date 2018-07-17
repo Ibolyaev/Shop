@@ -1,7 +1,7 @@
 import Alamofire
 
+//class UserData - can be used for update user data information
 class UserData: AbstractRequestFactory {
-    
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?
@@ -27,7 +27,7 @@ extension UserData: UserDataRequestFactory {
     struct UserDataUpdate: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "changeUserData.json"
+        let path: String = Api.changeUserData
         let user: User
         
         var parameters: Parameters? {
