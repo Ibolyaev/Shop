@@ -1,11 +1,3 @@
-//
-//  Constants.swift
-//  Ibolyaev
-//
-//  Created by Ronin on 15/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import Foundation
 
 enum Api {
@@ -15,6 +7,9 @@ enum Api {
     static let logout = "logout.json"
     static let registerUser = "registerUser.json"
     static let catalogData = "catalogData.json"
+    static let addReview = "addReview.json"
+    static let approveReview = "approveReview.json"
+    static let removeReview = "removeReview.json"
     static let url = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/"
 }
 

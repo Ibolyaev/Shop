@@ -20,6 +20,9 @@
 		3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2520FB7DAF00886DC8 /* removeReview.json */; };
 		3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */; };
 		3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */; };
+		30AC19292103237B00F95960 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC19282103237B00F95960 /* Review.swift */; };
+		30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192A2103239400F95960 /* ReviewRequestFactory.swift */; };
+		30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */; };
 		30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FC9D20EF621400886DC8 /* AppDelegate.swift */; };
 		30B2FCA520EF621400886DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA420EF621400886DC8 /* Assets.xcassets */; };
 		30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FCA620EF621400886DC8 /* LaunchScreen.storyboard */; };
@@ -88,6 +91,9 @@
 		2BD4DD210388A0F960C772BC /* Pods-Ibolyaev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibolyaev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev.debug.xcconfig"; sourceTree = "<group>"; };
 		3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRequestFactoryTest.swift; sourceTree = "<group>"; };
 		3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactoryTest.swift; sourceTree = "<group>"; };
+		30AC19282103237B00F95960 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		30AC192A2103239400F95960 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
+		30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryTest.swift; sourceTree = "<group>"; };
 		30B2FC9A20EF621400886DC8 /* Ibolyaev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibolyaev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2FC9D20EF621400886DC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B2FCA420EF621400886DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +231,7 @@
 				30B2FD1320F9E80100886DC8 /* AuthRequestFactoryTest.swift */,
 				3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */,
 				3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */,
+				30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */,
 				30B2FCB420EF621400886DC8 /* Info.plist */,
 			);
 			path = IbolyaevTests;
@@ -313,13 +320,15 @@
 		30B2FCF720F8995D00886DC8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				30B2FD1120F8A68D00886DC8 /* Configuration.swift */,
 				30B2FCF820F8995D00886DC8 /* Auth.swift */,
 				30B2FCF920F8995D00886DC8 /* AuthRequestFactory.swift */,
 				30B2FCFA20F8995D00886DC8 /* UserData.swift */,
 				30B2FCFB20F8995D00886DC8 /* UserDataRequestFactory.swift */,
 				30B2FD0B20F89E8800886DC8 /* Products.swift */,
 				30B2FD0D20F89EE400886DC8 /* ProductsRequestFactory.swift */,
-				30B2FD1120F8A68D00886DC8 /* Configuration.swift */,
+				30AC19282103237B00F95960 /* Review.swift */,
+				30AC192A2103239400F95960 /* ReviewRequestFactory.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -646,7 +655,9 @@
 				30B2FCFD20F8995D00886DC8 /* AuthRequestFactory.swift in Sources */,
 				30B2FD0920F8997500886DC8 /* RequestRouter.swift in Sources */,
 				30B2FCF620F8995200886DC8 /* NetworkResponse.swift in Sources */,
+				30AC19292103237B00F95960 /* Review.swift in Sources */,
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
+				30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
 				30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */,
@@ -657,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */,
 				30B2FD1B20FB7BE000886DC8 /* OHHTTPStubsResponse+JSON.swift in Sources */,
 				30B2FD1520FA1A5500886DC8 /* RequestFactoryMock.swift in Sources */,
 				30B2FD1720FA1B0700886DC8 /* ErrorParserStub.swift in Sources */,

@@ -1,15 +1,7 @@
-//
-//  Goods.swift
-//  Ibolyaev
-//
-//  Created by Ronin on 13/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import Alamofire
 
+//class Products - can be used to get product list, or get product by its id
 class Products: AbstractRequestFactory {
-    
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?

@@ -1,11 +1,3 @@
-//
-//  ProductsRequestFactoryTest.swift
-//  IbolyaevTests
-//
-//  Created by Ronin on 16/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import XCTest
 import OHHTTPStubs
 @testable import Ibolyaev

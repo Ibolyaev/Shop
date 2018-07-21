@@ -18,6 +18,19 @@ struct LogoutResult: Codable {
     let result: Int
 }
 
+struct ReviewRemoveResult: Codable {
+    let result: Int
+}
+
+struct ReviewApproveResult: Codable {
+    let result: Int
+}
+
+struct ReviewAddResult: Codable {
+    let result: Int
+    let userMessage: String
+}
+
 struct ProductListResult: Codable {
     let pageNumber: Int
     let products: [Product]

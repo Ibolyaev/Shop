@@ -1,7 +1,7 @@
 import Alamofire
 
+//class UserData - can be used for update user data information
 class UserData: AbstractRequestFactory {
-    
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?

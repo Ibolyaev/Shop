@@ -1,7 +1,7 @@
 import Alamofire
 
+// class Auth - can be used for auth processes, like login, logout, registation
 class Auth: AbstractRequestFactory {
-    
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?

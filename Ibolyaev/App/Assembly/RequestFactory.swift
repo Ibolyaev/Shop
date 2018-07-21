@@ -1,6 +1,7 @@
 import Alamofire
 
-class RequestFactory {    
+class RequestFactory {
+    
     func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
@@ -21,6 +22,7 @@ class RequestFactory {
             queue: sessionQueue
         )
     }
+    
     func makeUserDataRequestFatory() -> UserDataRequestFactory {
         let errorParser = makeErrorParser()
         return UserData(
@@ -29,11 +31,20 @@ class RequestFactory {
             queue: sessionQueue
         )
     }
+    
     func makeProductsRequestFactory() -> ProductsRequestFactory {
         let errorParser = makeErrorParser()
         return Products(errorParser: errorParser,
                         sessionManager: commonSessionManager,
                         queue: sessionQueue
+        )
+    }
+    
+    func makeReviewRequestFactory() -> ReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return Review(errorParser: errorParser,
+                      sessionManager: commonSessionManager,
+                      queue: sessionQueue
         )
     }
 }
