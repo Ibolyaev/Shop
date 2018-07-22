@@ -1,5 +1,6 @@
-import XCTest
 import OHHTTPStubs
+import XCTest
+
 @testable import Ibolyaev
 
 class ProductsRequestFactoryTest: XCTestCase {

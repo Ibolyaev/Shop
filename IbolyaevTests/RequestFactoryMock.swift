@@ -1,6 +1,7 @@
 import Alamofire
-import OHHTTPStubs
 @testable import Ibolyaev
+import OHHTTPStubs
+
 
 class RequestFactoryMock {
     

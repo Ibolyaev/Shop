@@ -7,6 +7,7 @@ target 'Ibolyaev' do
 
   # Pods for Ibolyaev
   pod 'Alamofire', '~> 4.7'
+  pod 'SwiftLint'
 
   target 'IbolyaevTests' do
     inherit! :search_paths

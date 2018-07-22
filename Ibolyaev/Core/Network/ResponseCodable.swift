@@ -7,7 +7,7 @@ extension DataRequest {
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (DataResponse<T>) -> Void)
         -> Self {
-            let responseSerializer = DataResponseSerializer<T> { request, response, data, error in
+            let responseSerializer = DataResponseSerializer<T> { _, response, data, error in
                 if let error = errorParser.parse(response: response, data: data, error: error) {
                     return .failure(error)
                 }
@@ -29,4 +29,3 @@ extension DataRequest {
             return response(queue: queue, responseSerializer: responseSerializer, completionHandler: completionHandler)
     }
 }
-

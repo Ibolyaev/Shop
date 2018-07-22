@@ -398,6 +398,7 @@
 				30B2FC9720EF621400886DC8 /* Frameworks */,
 				30B2FC9820EF621400886DC8 /* Resources */,
 				CAB495534E3B9B76C9AD9E9A /* [CP] Embed Pods Frameworks */,
+				30AC192F21047F6300F95960 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -561,6 +562,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		30AC192F21047F6300F95960 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		AC64906224CB6F969A11ACB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

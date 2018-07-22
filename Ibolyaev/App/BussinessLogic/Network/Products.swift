@@ -24,7 +24,7 @@ extension Products: ProductsRequestFactory {
         let request = ProductsGetList(baseUrl: configuration.baseUrl, pageNumber: pageNumber, category: category)
         self.request(reques: request, completionHandler: completionHandler)
     }
-    func getWith(id: Int, completionHandler: @escaping (DataResponse<ProductResponse>) -> Void)  {
+    func getWith(id: Int, completionHandler: @escaping (DataResponse<ProductResponse>) -> Void) {
         let request = ProductById(baseUrl: configuration.baseUrl)
         self.request(reques: request, completionHandler: completionHandler)
     }

@@ -12,4 +12,3 @@ enum Api {
     static let removeReview = "removeReview.json"
     static let url = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/"
 }
-

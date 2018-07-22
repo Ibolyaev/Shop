@@ -1,13 +1,7 @@
-//
-//  AuthRequestFactoryTest.swift
-//  IbolyaevTests
-//
-//  Created by Ronin on 14/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
-import XCTest
 import OHHTTPStubs
+import XCTest
+
+
 @testable import Ibolyaev
 
 class AuthRequestFactoryTest: XCTestCase {
