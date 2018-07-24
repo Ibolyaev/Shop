@@ -15,8 +15,11 @@ extension OHHTTPStubsResponse {
         let fileName = String(resourceArr[0])
         let fileExtension = String(resourceArr[1])
         
-        stub(condition: isMethodGET() && pathEndsWith(pathEnd)) { request in
-            let fileUrl = Bundle.main.url(forResource: fileName, withExtension: fileExtension)!
+        stub(condition: isMethodGET() && pathEndsWith(pathEnd)) { _ in
+            let fileUrl = Bundle.main.url(
+                forResource: fileName,
+                withExtension: fileExtension
+                )! // swiftlint:disable:this force_unwrapping
             return OHHTTPStubsResponse(
                 fileURL: fileUrl,
                 statusCode: 200,

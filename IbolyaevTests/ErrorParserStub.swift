@@ -1,4 +1,3 @@
-
 import Alamofire
 
 @testable import Ibolyaev
@@ -10,9 +9,7 @@ struct ErrorParserStub: AbstractErrorParser {
     func parse(_ result: Error) -> Error {
         return ApiErrorStub.fatalError
     }
-    func parse(response: HTTPURLResponse?, data: Data?, error: Error?) -> Error?
-    {
+    func parse(response: HTTPURLResponse?, data: Data?, error: Error?) -> Error? {
         return error
     }
 }
-

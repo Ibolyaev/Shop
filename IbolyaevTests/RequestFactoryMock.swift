@@ -1,6 +1,7 @@
 import Alamofire
-import OHHTTPStubs
 @testable import Ibolyaev
+import OHHTTPStubs
+
 
 class RequestFactoryMock {
     
@@ -44,11 +45,17 @@ class RequestFactoryMock {
         )
     }
     
+    func makeCartRequestFactory() -> CartRequestFactory {
+        let errorParser = makeErrorParser()
+        return Cart(
+            errorParser: errorParser,
+            sessionManager: commonSessionManager,
+            queue: sessionQueue
+        )
+    }
+    
     func makeReviewRequestFactory() -> ReviewRequestFactory {
         let errorParser = makeErrorParser()
-        /* Не мойму почему ошибка происходит
-         Error:
-         Cannot convert return expression of type 'Review' to return type 'ReviewRequestFactory'*/
         return Review(
             errorParser: errorParser,
             sessionManager: commonSessionManager,
