@@ -1,4 +1,5 @@
 import Foundation
+// Содержатся различные структуры для работы с сетью, отвечающие за сериализацию ответов от сервера
 
 struct UserDataUpdateResult: Codable {
     let result: Int
@@ -30,9 +31,11 @@ struct ReviewAddResult: Codable {
     let result: Int
     let userMessage: String
 }
+
 struct CartAddResult: Codable {
     let result: Int
 }
+
 struct CartDeleteResult: Codable {
     let result: Int
 }

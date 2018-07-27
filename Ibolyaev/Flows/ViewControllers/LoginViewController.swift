@@ -1,35 +1,56 @@
-//
-//  LoginViewController.swift
-//  Ibolyaev
-//
-//  Created by Ronin on 28/07/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import UIKit
 
-class LoginViewController: UIViewController {
+// Отвечает за вход пользователя в систему
 
-    var authRequest: AuthRequestFactory!
+class LoginViewController: UIViewController {
+    
+    // MARK: - IBOutlet
     
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var signIn: LoadingButton!
+    
+    // MARK: - Private properties
+    
+    private var authRequest: AuthRequestFactory!
+    
+    // MARK: - ViewController lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         authRequest = RequestFactory().makeAuthRequestFatory()
     }
-
+    
+    // MARK: - IBAction
+    
     @IBAction func loginTouchUpInside(_ sender: UIButton) {
         guard let name = loginTextField.text, let password = passwordTextField.text else {
             return
         }
+        startAnimations()
         authRequest.login(userName: name, password: password) {[weak self] (result) in
+            DispatchQueue.main.async {
+                self?.stopAnimations()
+            }
             if let user = result.value?.user {
-                self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
+                DispatchQueue.main.async {
+                    self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
+                }
             }
         }
     }
+    
+    // MARK: - Private methods
+    
+    private func startAnimations() {
+        signIn.showLoading()
+    }
+    
+    private func stopAnimations() {
+        signIn.hideLoading()
+    }
+    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == SegueIdentifiers.userInformation,
