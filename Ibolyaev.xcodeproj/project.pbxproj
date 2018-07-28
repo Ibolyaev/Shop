@@ -20,6 +20,12 @@
 		3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2520FB7DAF00886DC8 /* removeReview.json */; };
 		3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */; };
 		3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */; };
+		30830DAA210C7FC80003B66C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DA9210C7FC80003B66C /* Cart.swift */; };
+		30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */; };
+		30830DAE210C96BF0003B66C /* CartRequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */; };
+		30830DB0210C9AE30003B66C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAF210C9AE30003B66C /* LoginViewController.swift */; };
+		30830DB2210C9C450003B66C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DB1210C9C450003B66C /* UserViewController.swift */; };
+		30830DB4210C9CC00003B66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30830DB3210C9CC00003B66C /* Main.storyboard */; };
 		30AC19292103237B00F95960 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC19282103237B00F95960 /* Review.swift */; };
 		30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192A2103239400F95960 /* ReviewRequestFactory.swift */; };
 		30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */; };
@@ -91,6 +97,12 @@
 		2BD4DD210388A0F960C772BC /* Pods-Ibolyaev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibolyaev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev.debug.xcconfig"; sourceTree = "<group>"; };
 		3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRequestFactoryTest.swift; sourceTree = "<group>"; };
 		3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactoryTest.swift; sourceTree = "<group>"; };
+		30830DA9210C7FC80003B66C /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactory.swift; sourceTree = "<group>"; };
+		30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactoryTests.swift; sourceTree = "<group>"; };
+		30830DAF210C9AE30003B66C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		30830DB1210C9C450003B66C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		30830DB3210C9CC00003B66C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		30AC19282103237B00F95960 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		30AC192A2103239400F95960 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryTest.swift; sourceTree = "<group>"; };
@@ -186,6 +198,15 @@
 			path = Environments;
 			sourceTree = "<group>";
 		};
+		30830DB5210CA2E70003B66C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30830DAF210C9AE30003B66C /* LoginViewController.swift */,
+				30830DB1210C9C450003B66C /* UserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		30B2FC9120EF621400886DC8 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +253,7 @@
 				3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */,
 				3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */,
 				30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */,
+				30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */,
 				30B2FCB420EF621400886DC8 /* Info.plist */,
 			);
 			path = IbolyaevTests;
@@ -287,6 +309,8 @@
 		30B2FCCF20F098E200886DC8 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				30830DB5210CA2E70003B66C /* ViewControllers */,
+				30830DB3210C9CC00003B66C /* Main.storyboard */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -329,6 +353,8 @@
 				30B2FD0D20F89EE400886DC8 /* ProductsRequestFactory.swift */,
 				30AC19282103237B00F95960 /* Review.swift */,
 				30AC192A2103239400F95960 /* ReviewRequestFactory.swift */,
+				30830DA9210C7FC80003B66C /* Cart.swift */,
+				30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -505,6 +531,7 @@
 				3036EA6120FB8DA900B40B9A /* catalogData.json in Resources */,
 				3036EA6220FB8DA900B40B9A /* changeUserData.json in Resources */,
 				3036EA6320FB8DA900B40B9A /* deleteFromBasket.json in Resources */,
+				30830DB4210C9CC00003B66C /* Main.storyboard in Resources */,
 				3036EA6420FB8DA900B40B9A /* getBasket.json in Resources */,
 				3036EA6520FB8DA900B40B9A /* getGoodById.json in Resources */,
 				3036EA6620FB8DA900B40B9A /* logout.json in Resources */,
@@ -656,7 +683,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B2FD0C20F89E8800886DC8 /* Products.swift in Sources */,
+				30830DB2210C9C450003B66C /* UserViewController.swift in Sources */,
 				30B2FD0E20F89EE400886DC8 /* ProductsRequestFactory.swift in Sources */,
+				30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */,
+				30830DB0210C9AE30003B66C /* LoginViewController.swift in Sources */,
 				30B2FD1920FA256F00886DC8 /* RequestFactory.swift in Sources */,
 				30B2FD0720F8997500886DC8 /* AbstractRequestFactory.swift in Sources */,
 				30B2FD0620F8997500886DC8 /* AbstractErrorParser.swift in Sources */,
@@ -665,6 +695,7 @@
 				30B2FCFF20F8995D00886DC8 /* UserDataRequestFactory.swift in Sources */,
 				30B2FCFE20F8995D00886DC8 /* UserData.swift in Sources */,
 				30B2FD1020F8A13400886DC8 /* Product.swift in Sources */,
+				30830DAA210C7FC80003B66C /* Cart.swift in Sources */,
 				30B2FD0820F8997500886DC8 /* ErrorParser.swift in Sources */,
 				30B2FCFD20F8995D00886DC8 /* AuthRequestFactory.swift in Sources */,
 				30B2FD0920F8997500886DC8 /* RequestRouter.swift in Sources */,
@@ -688,6 +719,7 @@
 				30B2FD1720FA1B0700886DC8 /* ErrorParserStub.swift in Sources */,
 				3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */,
 				3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */,
+				30830DAE210C96BF0003B66C /* CartRequestFactoryTests.swift in Sources */,
 				30B2FD1420F9E80100886DC8 /* AuthRequestFactoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

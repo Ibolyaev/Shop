@@ -30,6 +30,12 @@ struct ReviewAddResult: Codable {
     let result: Int
     let userMessage: String
 }
+struct CartAddResult: Codable {
+    let result: Int
+}
+struct CartDeleteResult: Codable {
+    let result: Int
+}
 
 struct ProductListResult: Codable {
     let pageNumber: Int

@@ -10,5 +10,11 @@ enum Api {
     static let addReview = "addReview.json"
     static let approveReview = "approveReview.json"
     static let removeReview = "removeReview.json"
+    static let addToBasket = "addToBasket.json"
+    static let deleteFromBasket = "deleteFromBasket.json"
     static let url = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/"
+}
+
+enum SegueIdentifiers {
+    static let userInformation = "showUserInformation"
 }
