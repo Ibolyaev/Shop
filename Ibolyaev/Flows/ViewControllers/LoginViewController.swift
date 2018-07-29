@@ -31,6 +31,9 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func signUpTouchUpInside(_ sender: UIButton) {
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == SegueIdentifiers.userInformation,
             let userVC = segue.destination as? UserViewController,

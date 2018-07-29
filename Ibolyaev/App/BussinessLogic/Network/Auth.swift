@@ -1,23 +1,9 @@
 import Alamofire
 
 // class Auth - can be used for auth processes, like login, logout, registation
-class Auth: AbstractRequestFactory {
-    let errorParser: AbstractErrorParser
-    let sessionManager: SessionManager
-    let queue: DispatchQueue?
-    let configuration: Configuration
-    
-    init(
-        errorParser: AbstractErrorParser,
-        sessionManager: SessionManager,
-        queue: DispatchQueue? = DispatchQueue.global(qos: .utility)) {
-        
-        self.errorParser = errorParser
-        self.sessionManager = sessionManager
-        self.queue = queue
-        self.configuration = Configuration()
-    }
+class Auth: BasicFactory {
 }
+
 extension Auth: AuthRequestFactory {
     
     func login(

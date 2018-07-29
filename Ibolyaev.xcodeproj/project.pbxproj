@@ -26,6 +26,8 @@
 		30830DB0210C9AE30003B66C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAF210C9AE30003B66C /* LoginViewController.swift */; };
 		30830DB2210C9C450003B66C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DB1210C9C450003B66C /* UserViewController.swift */; };
 		30830DB4210C9CC00003B66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30830DB3210C9CC00003B66C /* Main.storyboard */; };
+		30830DB7210DF01B0003B66C /* BasicFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DB6210DF01B0003B66C /* BasicFactory.swift */; };
+		30830DBB210DFC920003B66C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DBA210DFC920003B66C /* SignUpViewController.swift */; };
 		30AC19292103237B00F95960 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC19282103237B00F95960 /* Review.swift */; };
 		30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192A2103239400F95960 /* ReviewRequestFactory.swift */; };
 		30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */; };
@@ -103,6 +105,8 @@
 		30830DAF210C9AE30003B66C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30830DB1210C9C450003B66C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		30830DB3210C9CC00003B66C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		30830DB6210DF01B0003B66C /* BasicFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFactory.swift; sourceTree = "<group>"; };
+		30830DBA210DFC920003B66C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		30AC19282103237B00F95960 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		30AC192A2103239400F95960 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryTest.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 		30830DB5210CA2E70003B66C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30830DBA210DFC920003B66C /* SignUpViewController.swift */,
 				30830DAF210C9AE30003B66C /* LoginViewController.swift */,
 				30830DB1210C9C450003B66C /* UserViewController.swift */,
 			);
@@ -344,6 +349,7 @@
 		30B2FCF720F8995D00886DC8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				30830DB6210DF01B0003B66C /* BasicFactory.swift */,
 				30B2FD1120F8A68D00886DC8 /* Configuration.swift */,
 				30B2FCF820F8995D00886DC8 /* Auth.swift */,
 				30B2FCF920F8995D00886DC8 /* AuthRequestFactory.swift */,
@@ -693,6 +699,7 @@
 				30B2FD0A20F8997500886DC8 /* ResponseCodable.swift in Sources */,
 				30B2FCFC20F8995D00886DC8 /* Auth.swift in Sources */,
 				30B2FCFF20F8995D00886DC8 /* UserDataRequestFactory.swift in Sources */,
+				30830DB7210DF01B0003B66C /* BasicFactory.swift in Sources */,
 				30B2FCFE20F8995D00886DC8 /* UserData.swift in Sources */,
 				30B2FD1020F8A13400886DC8 /* Product.swift in Sources */,
 				30830DAA210C7FC80003B66C /* Cart.swift in Sources */,
@@ -705,6 +712,7 @@
 				30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
+				30830DBB210DFC920003B66C /* SignUpViewController.swift in Sources */,
 				30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
