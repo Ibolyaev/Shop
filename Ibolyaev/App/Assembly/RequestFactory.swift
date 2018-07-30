@@ -1,5 +1,7 @@
 import Alamofire
 
+// Собирает все используемые фабрики запросов
+
 class RequestFactory {
     
     func makeErrorParser() -> AbstractErrorParser {

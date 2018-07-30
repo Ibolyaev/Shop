@@ -28,6 +28,8 @@
 		30830DB4210C9CC00003B66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30830DB3210C9CC00003B66C /* Main.storyboard */; };
 		30830DB7210DF01B0003B66C /* BasicFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DB6210DF01B0003B66C /* BasicFactory.swift */; };
 		30830DBB210DFC920003B66C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DBA210DFC920003B66C /* SignUpViewController.swift */; };
+		30830DBD210F1D380003B66C /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DBC210F1D380003B66C /* UserTest.swift */; };
+		30830DC0210F53BE0003B66C /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DBF210F53BE0003B66C /* LoadingButton.swift */; };
 		30AC19292103237B00F95960 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC19282103237B00F95960 /* Review.swift */; };
 		30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192A2103239400F95960 /* ReviewRequestFactory.swift */; };
 		30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */; };
@@ -107,6 +109,8 @@
 		30830DB3210C9CC00003B66C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		30830DB6210DF01B0003B66C /* BasicFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFactory.swift; sourceTree = "<group>"; };
 		30830DBA210DFC920003B66C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		30830DBC210F1D380003B66C /* UserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
+		30830DBF210F53BE0003B66C /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		30AC19282103237B00F95960 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		30AC192A2103239400F95960 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryTest.swift; sourceTree = "<group>"; };
@@ -212,6 +216,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		30830DBE210F53A70003B66C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30830DBF210F53BE0003B66C /* LoadingButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		30B2FC9120EF621400886DC8 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +271,7 @@
 				3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */,
 				30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */,
 				30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */,
+				30830DBC210F1D380003B66C /* UserTest.swift */,
 				30B2FCB420EF621400886DC8 /* Info.plist */,
 			);
 			path = IbolyaevTests;
@@ -314,6 +327,7 @@
 		30B2FCCF20F098E200886DC8 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				30830DBE210F53A70003B66C /* Views */,
 				30830DB5210CA2E70003B66C /* ViewControllers */,
 				30830DB3210C9CC00003B66C /* Main.storyboard */,
 			);
@@ -688,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30830DC0210F53BE0003B66C /* LoadingButton.swift in Sources */,
 				30B2FD0C20F89E8800886DC8 /* Products.swift in Sources */,
 				30830DB2210C9C450003B66C /* UserViewController.swift in Sources */,
 				30B2FD0E20F89EE400886DC8 /* ProductsRequestFactory.swift in Sources */,
@@ -728,6 +743,7 @@
 				3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */,
 				3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */,
 				30830DAE210C96BF0003B66C /* CartRequestFactoryTests.swift in Sources */,
+				30830DBD210F1D380003B66C /* UserTest.swift in Sources */,
 				30B2FD1420F9E80100886DC8 /* AuthRequestFactoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

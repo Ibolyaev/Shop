@@ -1,5 +1,7 @@
 import Foundation
 
+// Хранит информацию о продукте
+
 struct Product: Codable {
     let id: Int
     let name: String

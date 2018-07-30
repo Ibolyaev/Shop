@@ -1,5 +1,7 @@
 import Alamofire
 
+// Используется для получения запросов по работе с корзиной
+
 class Cart: BasicFactory {
 }
 

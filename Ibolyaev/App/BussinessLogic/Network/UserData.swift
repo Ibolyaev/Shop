@@ -1,6 +1,7 @@
 import Alamofire
 
-//class UserData - can be used for update user data information
+//Используется для получения запросов обновления данных пользователя
+
 class UserData: BasicFactory {
 }
 

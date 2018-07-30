@@ -1,6 +1,7 @@
 import Alamofire
 
-//class Products - can be used to get product list, or get product by its id
+//Используется дял получения запросов работы с продуктами (Product)
+
 class Products: BasicFactory {
 }
 

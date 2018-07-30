@@ -1,6 +1,7 @@
 import Alamofire
 
-//class Review - Can be used to add, approve or remove reviews on product
+//Используется для получения запросов работы с отзывами
+
 class Review: BasicFactory {   
 }
 

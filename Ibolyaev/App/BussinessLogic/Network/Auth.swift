@@ -1,6 +1,7 @@
 import Alamofire
 
-// class Auth - can be used for auth processes, like login, logout, registation
+// class Auth - Используется для получения запросов на регистрцаию, вход, выход из системы
+
 class Auth: BasicFactory {
 }
 
