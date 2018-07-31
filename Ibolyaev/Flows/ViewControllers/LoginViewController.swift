@@ -3,12 +3,6 @@ import UIKit
 // Отвечает за вход пользователя в систему
 
 class LoginViewController: UIViewController {
-
-    // MARK: - Custom types
-    
-    // MARK: - Identifiers
-    
-    // MARK: - Constants
     
     // MARK: - IBOutlet
     
@@ -16,14 +10,9 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var signIn: LoadingButton!
     
-    // MARK: - Public properties
-    
     // MARK: - Private properties
     
     private var authRequest: AuthRequestFactory!
-    
-    // MARK: - Init
-    
     
     // MARK: - ViewController lifecycle
     
@@ -51,13 +40,8 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func signUpTouchUpInside(_ sender: UIButton) {
-    }
-    
-    
-    // MARK: - Public methods
-    
     // MARK: - Private methods
+    
     private func startAnimations() {
         signIn.showLoading()
     }
@@ -65,6 +49,7 @@ class LoginViewController: UIViewController {
     private func stopAnimations() {
         signIn.hideLoading()
     }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -4,11 +4,6 @@ import UIKit
 
 class UserViewController: UIViewController {
     
-    
-    // MARK: - Custom types
-    
-    // MARK: - Identifiers
-    // MARK: - Constants
     // MARK: - IBOutlet
     
     @IBOutlet var login: UITextField!
@@ -27,7 +22,7 @@ class UserViewController: UIViewController {
     // MARK: - Private properties
     
     private var userDataRequest: UserDataRequestFactory!
-    // MARK: - Init
+    
     // MARK: - ViewController lifecycle
     
     override func viewDidLoad() {
@@ -37,6 +32,7 @@ class UserViewController: UIViewController {
     }
     
     // MARK: - IBAction
+    
     @IBAction func updateTouchUpInside(_ sender: LoadingButton) {
         guard let user = self.user else { return }
         
@@ -50,9 +46,10 @@ class UserViewController: UIViewController {
             }
         }
     }
-    // MARK: - Public methods
+    
     // MARK: - Private methods
-    func loadUserInformation() {
+    
+    private func loadUserInformation() {
         guard let user = user else { return }
         
         login.text = user.login
@@ -69,6 +66,5 @@ class UserViewController: UIViewController {
     private func stopAnimations() {
         update.hideLoading()
     }
-    // MARK: - Navigation
     
 }
