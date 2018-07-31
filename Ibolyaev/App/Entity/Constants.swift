@@ -17,4 +17,16 @@ enum Api {
 
 enum SegueIdentifiers {
     static let userInformation = "showUserInformation"
+    static let showProducts = "showProducts"
+    static let showProduct = "showProduct"
+}
+
+enum TableViewCellIdentifiers {
+    static let productCell = "productCell"
+    static let reviewCell = "ReviewCell"
+}
+
+enum Nibs {
+    static let productCell = "ProductCell"
+    static let reviewCell = "ReviewCell"
 }
