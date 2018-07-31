@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
     
     private var user: User? {
         didSet {
-            signUp.isEnabled = user?.filledCorrectly() ?? false
+            signUp.isHidden = !(user?.filledCorrectly() ?? false)
         }
     }
     private var authRequest: AuthRequestFactory!

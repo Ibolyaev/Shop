@@ -330,7 +330,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4Hb-t0-yG8" userLabel="Bio stack view">
-                                <rect key="frame" x="20" y="271" width="335" height="200.33333333333337"/>
+                                <rect key="frame" x="20" y="271" width="335" height="156.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRm-2o-1L4">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="20.333333333333332"/>
@@ -347,13 +347,12 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-iH-YqY" customClass="LoadingButton" customModule="Ibolyaev" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="164.33333333333331" width="335" height="36"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-iH-YqY" customClass="LoadingButton" customModule="Ibolyaev" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160.33333333333331" width="335" height="36"/>
                                         <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="yX8-Zi-5fS"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -398,6 +397,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gAX-yH-1TE"/>
+        <segue reference="J2P-Eq-hwM"/>
     </inferredMetricsTieBreakers>
 </document>
