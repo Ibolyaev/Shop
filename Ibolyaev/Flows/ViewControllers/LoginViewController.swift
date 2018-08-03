@@ -32,7 +32,8 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.stopAnimations()
             }
-            if (result.value?.user) != nil {
+            if let user = result.value?.user {
+                AppState.shared.user = user
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.showProducts, sender: nil)
                 }

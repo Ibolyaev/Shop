@@ -16,4 +16,5 @@ protocol CartRequestFactory {
         ) -> Void
     )
     func remove(product: Product, completionHandler: @escaping (DataResponse<CartDeleteResult>) -> Void)
+    func get(user: User, completionHandler: @escaping (DataResponse<CartGetResult>) -> Void)
 }

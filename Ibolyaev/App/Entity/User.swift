@@ -52,7 +52,7 @@ struct User: Codable {
                 } else {
                     return !item.value.isEmpty
                 }
-        }
+        }        
     }
     
 }

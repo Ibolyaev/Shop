@@ -12,6 +12,7 @@ enum Api {
     static let removeReview = "removeReview.json"
     static let addToBasket = "addToBasket.json"
     static let deleteFromBasket = "deleteFromBasket.json"
+    static let getBasket = "getBasket.json"
     static let url = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/"
 }
 
@@ -19,14 +20,17 @@ enum SegueIdentifiers {
     static let userInformation = "showUserInformation"
     static let showProducts = "showProducts"
     static let showProduct = "showProduct"
+    static let checkOut = "checkOut"
 }
 
 enum TableViewCellIdentifiers {
     static let productCell = "productCell"
     static let reviewCell = "ReviewCell"
+    static let cartCell = "CartCell"
 }
 
 enum Nibs {
     static let productCell = "ProductCell"
     static let reviewCell = "ReviewCell"
+    static let cartCell = "CartCell"
 }

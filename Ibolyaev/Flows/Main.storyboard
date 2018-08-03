@@ -274,7 +274,7 @@
             </objects>
             <point key="canvasLocation" x="943" y="-171"/>
         </scene>
-        <!--Products View Controller-->
+        <!--Products-->
         <scene sceneID="xvw-JI-8OV">
             <objects>
                 <tableViewController id="YVs-wX-9UN" customClass="ProductsViewController" customModule="Ibolyaev" customModuleProvider="target" sceneMemberID="viewController">
@@ -297,7 +297,7 @@
                             <outlet property="delegate" destination="YVs-wX-9UN" id="aPf-5A-e5E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kbb-vn-8UY">
+                    <navigationItem key="navigationItem" title="Products" id="kbb-vn-8UY">
                         <barButtonItem key="rightBarButtonItem" title="User" id="XUi-Lv-Ed6">
                             <connections>
                                 <segue destination="v1B-bN-Qgo" kind="show" id="bKo-9Y-pdr"/>
@@ -312,7 +312,7 @@
             </objects>
             <point key="canvasLocation" x="2668" y="-171"/>
         </scene>
-        <!--Product View Controller-->
+        <!--Product info-->
         <scene sceneID="z28-Zv-3tH">
             <objects>
                 <viewController id="Amz-XI-DDl" customClass="ProductViewController" customModule="Ibolyaev" customModuleProvider="target" sceneMemberID="viewController">
@@ -373,6 +373,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y04-g7-sgi"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Product info" id="N46-ef-VtX">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="Qcd-S7-dqC">
+                            <connections>
+                                <segue destination="T31-BO-Vgi" kind="show" id="Mav-EJ-Dyn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionLabel" destination="rmU-Lw-oOm" id="pb1-ph-jLy"/>
                         <outlet property="name" destination="VJZ-Yr-0dA" id="bdT-Mz-bSQ"/>
@@ -383,6 +390,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zn4-9G-pY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3471" y="-171"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="Cjg-Sz-Lug">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" id="T31-BO-Vgi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxz-4f-bip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4633" y="-171"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="1co-ji-P3Q">
@@ -516,6 +531,9 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
