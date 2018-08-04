@@ -32,9 +32,9 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.stopAnimations()
             }
-            if let user = result.value?.user {
+            if (result.value?.user) != nil {
                 DispatchQueue.main.async {
-                    self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
+                    self?.performSegue(withIdentifier: SegueIdentifiers.showProducts, sender: nil)
                 }
             }
         }
