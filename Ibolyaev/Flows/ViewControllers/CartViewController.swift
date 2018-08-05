@@ -1,12 +1,5 @@
-//
-//  CartViewController.swift
-//  Ibolyaev
-//
-//  Created by Ronin on 05/08/2018.
-//  Copyright © 2018 Ronin. All rights reserved.
-//
-
 import UIKit
+import Crashlytics
 
 class CartViewController: UIViewController {
     

@@ -1,7 +1,12 @@
 import UIKit
+import Crashlytics
 
 class ProductViewController: UIViewController {
     
+    @IBAction func addToCartTouchUpInside(_ sender: UIButton) {
+        guard let product = self.product else { return }
+        addToCart(product, quantity: 1)
+    }
     // MARK: - Identifiers
     
      let reviewCellIdentifier = TableViewCellIdentifiers.reviewCell
@@ -28,14 +33,10 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateProductUI()
         reviewsRequest = RequestFactory().makeReviewRequestFactory()
         cartRequest = RequestFactory().makeCartRequestFactory()
         configureTableView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        updateProductUI()
     }
     
     // MARK: - Private methods
@@ -63,12 +64,30 @@ class ProductViewController: UIViewController {
     private func addToCart(_ product: Product, quantity: Int) {
         cartRequest.add(product: product, quantity: quantity) {[weak self] (response) in
             guard let value = response.value else { return }
+            Answers.logAddToCart(withPrice: NSDecimalNumber(value: product.price),
+                                 currency: "USD",
+                                 itemName: product.name,
+                                 itemType: nil,
+                                 itemId: product.id.description,
+                                 customAttributes: nil)
             // TODO: Show success alert
         }
     }
 }
 
+extension ProductViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        
+        headerView.textLabel?.textColor = Colors.text
+    }
+}
+
 extension ProductViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Reviews"
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reviews.count

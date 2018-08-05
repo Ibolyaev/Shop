@@ -89,6 +89,8 @@
 		33FBC8A4A9B889315BEC73B3 /* Pods_IbolyaevUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5B2C5C011B5A7E0A5E8DD1 /* Pods_IbolyaevUITests.framework */; };
 		AA3195C01AF7F6BBDD03069E /* Pods_IbolyaevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014255F7AC60A366F787A8F1 /* Pods_IbolyaevTests.framework */; };
 		BAE0C8AEB6BF00296D25E4F4 /* Pods_Ibolyaev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */; };
+		BD4C635B2117660600284203 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4C635A2117660600284203 /* Product.storyboard */; };
+		BD4C635D21176A5300284203 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C635C21176A5300284203 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +192,8 @@
 		6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ibolyaev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9A216D6E3E3B3C8FF3333E /* Pods-IbolyaevUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A0969F44DEBE7CA03D452C15 /* Pods-IbolyaevUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4C635A2117660600284203 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		BD4C635C21176A5300284203 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C86FB597C55D9FBF0496E1E0 /* Pods-IbolyaevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -387,6 +391,7 @@
 				30B2FCF320F8995200886DC8 /* User.swift */,
 				30B2FD0F20F8A13400886DC8 /* Product.swift */,
 				30830DDA211733590003B66C /* CartItem.swift */,
+				BD4C635C21176A5300284203 /* Colors.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				30830DB5210CA2E70003B66C /* ViewControllers */,
 				30830DB3210C9CC00003B66C /* Main.storyboard */,
 				30830DDE21173E180003B66C /* Cart.storyboard */,
+				BD4C635A2117660600284203 /* Product.storyboard */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -522,6 +528,8 @@
 				30B2FC9820EF621400886DC8 /* Resources */,
 				CAB495534E3B9B76C9AD9E9A /* [CP] Embed Pods Frameworks */,
 				30AC192F21047F6300F95960 /* ShellScript */,
+				7260BEB0F4934B503B4BD7F9 /* [CP] Copy Pods Resources */,
+				BD4C635921175A7800284203 /* Run Script Fabric */,
 			);
 			buildRules = (
 			);
@@ -541,6 +549,7 @@
 				30B2FCAB20EF621400886DC8 /* Frameworks */,
 				30B2FCAC20EF621400886DC8 /* Resources */,
 				13028BAF26DF9ADDCAA624AC /* [CP] Embed Pods Frameworks */,
+				2271CDE7B9F66924F8978EB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -560,6 +569,8 @@
 				30B2FCB520EF621400886DC8 /* Sources */,
 				30B2FCB620EF621400886DC8 /* Frameworks */,
 				30B2FCB720EF621400886DC8 /* Resources */,
+				36FDDC257BC89B68A0B8FED5 /* [CP] Embed Pods Frameworks */,
+				4B10C91E54C4D82A1986335B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -638,6 +649,7 @@
 				3036EA6520FB8DA900B40B9A /* getGoodById.json in Resources */,
 				3036EA6620FB8DA900B40B9A /* logout.json in Resources */,
 				3036EA6720FB8DA900B40B9A /* registerUser.json in Resources */,
+				BD4C635B2117660600284203 /* Product.storyboard in Resources */,
 				3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */,
 				30B2FD3B20FB85F600886DC8 /* login.json in Resources */,
 				30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */,
@@ -692,6 +704,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2271CDE7B9F66924F8978EB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30AC192F21047F6300F95960 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,6 +731,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		36FDDC257BC89B68A0B8FED5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B10C91E54C4D82A1986335B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7260BEB0F4934B503B4BD7F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		AC64906224CB6F969A11ACB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -758,6 +830,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BD4C635921175A7800284203 /* Run Script Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Fabric";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a437f1425921b4f454a4903ab63495e07325c3ab ab20787e0dbf697598c796f5f8a1f261d2b12da42cf834d39e2c6786662f8e9f";
 		};
 		CAB495534E3B9B76C9AD9E9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -815,6 +901,7 @@
 				30AC19292103237B00F95960 /* Review.swift in Sources */,
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
 				30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */,
+				BD4C635D21176A5300284203 /* Colors.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
 				30830DD221172CE30003B66C /* CartViewController.swift in Sources */,

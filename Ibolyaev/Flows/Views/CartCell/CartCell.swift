@@ -18,6 +18,11 @@ class CartCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // Set background color
+        let view = UIView()
+        view.backgroundColor = Colors.tint
+        selectedBackgroundView = view
     }
     
     func configure(name: String, qty: Int, sum: Int) {

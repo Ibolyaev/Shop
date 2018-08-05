@@ -1,4 +1,5 @@
 import UIKit
+import Crashlytics
 
 // Отвечает за вход пользователя в систему
 
@@ -33,6 +34,10 @@ class LoginViewController: UIViewController {
                 self?.stopAnimations()
             }
             if let user = result.value?.user {
+                Answers.logLogin(withMethod: "Email",
+                                 success: NSNumber(value: 1),
+                                 customAttributes: ["UserName": user.name]
+                )
                 AppState.shared.user = user
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.showProducts, sender: nil)

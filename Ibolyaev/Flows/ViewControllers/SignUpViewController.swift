@@ -1,4 +1,5 @@
 import UIKit
+import Crashlytics
 
 // Отвечает за регистрацию пользователя
 
@@ -42,6 +43,7 @@ class SignUpViewController: UIViewController {
                 self?.stopAnimations()
             }
             if reponse.value?.result == 1 {
+                Answers.logSignUp(withMethod: "Email", success: NSNumber(value: 1), customAttributes: nil)
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
                 }

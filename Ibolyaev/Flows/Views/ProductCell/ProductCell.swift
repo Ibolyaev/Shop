@@ -2,6 +2,15 @@ import UIKit
 
 class ProductCell: UITableViewCell {
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        // Set background color
+        let view = UIView()
+        view.backgroundColor = Colors.tint
+        selectedBackgroundView = view
+    }
+    
     // MARK: - IBOutlet
     
     @IBOutlet var name: UILabel!
