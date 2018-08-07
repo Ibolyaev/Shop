@@ -10,7 +10,7 @@ extension Cart: CartRequestFactory {
     struct AddToCart: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = Api.approveReview
+        let path: String = Api.addToBasket
         let id: Int
         let quantity: Int
         var parameters: Parameters? {
@@ -22,10 +22,20 @@ extension Cart: CartRequestFactory {
     struct DeleteFromCart: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = Api.approveReview
+        let path: String = Api.deleteFromBasket
         let id: Int
         var parameters: Parameters? {
             return ["id_product": id]
+        }
+    }
+    
+    struct GetCart: RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = Api.getBasket
+        let userId: Int
+        var parameters: Parameters? {
+            return ["id_user": userId]
         }
     }
     
@@ -36,6 +46,11 @@ extension Cart: CartRequestFactory {
     
     func remove(product: Product, completionHandler: @escaping (DataResponse<CartDeleteResult>) -> Void) {
         let request = DeleteFromCart(baseUrl: configuration.baseUrl, id: product.id)
+        self.request(reques: request, completionHandler: completionHandler)
+    }
+    
+    func get(user: User, completionHandler: @escaping (DataResponse<CartGetResult>) -> Void) {
+        let request = GetCart(baseUrl: configuration.baseUrl, userId: user.id)
         self.request(reques: request, completionHandler: completionHandler)
     }
     

@@ -19,6 +19,8 @@
 		3036EA6720FB8DA900B40B9A /* registerUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2320FB7DAE00886DC8 /* registerUser.json */; };
 		3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B2FD2520FB7DAF00886DC8 /* removeReview.json */; };
 		3036EA6C20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */; };
+		304771F42119AC7B0023B65C /* UIVerticalStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304771F22119AC7A0023B65C /* UIVerticalStepper.swift */; };
+		304771F52119AC7B0023B65C /* UIVerticalStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304771F32119AC7B0023B65C /* UIVerticalStepper.xib */; };
 		3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */; };
 		30830DAA210C7FC80003B66C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DA9210C7FC80003B66C /* Cart.swift */; };
 		30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */; };
@@ -36,6 +38,13 @@
 		30830DC82114D0D80003B66C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DC72114D0D80003B66C /* ProductViewController.swift */; };
 		30830DCE2114D11D0003B66C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DCC2114D11D0003B66C /* ReviewCell.swift */; };
 		30830DCF2114D11D0003B66C /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30830DCD2114D11D0003B66C /* ReviewCell.xib */; };
+		30830DD221172CE30003B66C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DD121172CE30003B66C /* CartViewController.swift */; };
+		30830DD421172D060003B66C /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DD321172D060003B66C /* CheckOutViewController.swift */; };
+		30830DD721172E1D0003B66C /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DD521172E1D0003B66C /* CartCell.swift */; };
+		30830DD821172E1D0003B66C /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30830DD621172E1D0003B66C /* CartCell.xib */; };
+		30830DDB211733590003B66C /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DDA211733590003B66C /* CartItem.swift */; };
+		30830DDD211736160003B66C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DDC211736160003B66C /* AppState.swift */; };
+		30830DDF21173E180003B66C /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30830DDE21173E180003B66C /* Cart.storyboard */; };
 		30AC19292103237B00F95960 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC19282103237B00F95960 /* Review.swift */; };
 		30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192A2103239400F95960 /* ReviewRequestFactory.swift */; };
 		30AC192D2103289A00F95960 /* ReviewRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */; };
@@ -106,6 +115,8 @@
 		1D5B2C5C011B5A7E0A5E8DD1 /* Pods_IbolyaevUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IbolyaevUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD4DD210388A0F960C772BC /* Pods-Ibolyaev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibolyaev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev.debug.xcconfig"; sourceTree = "<group>"; };
 		3036EA6B20FB8E9800B40B9A /* UserDataRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRequestFactoryTest.swift; sourceTree = "<group>"; };
+		304771F22119AC7A0023B65C /* UIVerticalStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalStepper.swift; sourceTree = "<group>"; };
+		304771F32119AC7B0023B65C /* UIVerticalStepper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIVerticalStepper.xib; sourceTree = "<group>"; };
 		3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactoryTest.swift; sourceTree = "<group>"; };
 		30830DA9210C7FC80003B66C /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactory.swift; sourceTree = "<group>"; };
@@ -123,6 +134,13 @@
 		30830DC72114D0D80003B66C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		30830DCC2114D11D0003B66C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		30830DCD2114D11D0003B66C /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		30830DD121172CE30003B66C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		30830DD321172D060003B66C /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		30830DD521172E1D0003B66C /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		30830DD621172E1D0003B66C /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
+		30830DDA211733590003B66C /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		30830DDC211736160003B66C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		30830DDE21173E180003B66C /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		30AC19282103237B00F95960 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		30AC192A2103239400F95960 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		30AC192C2103289A00F95960 /* ReviewRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactoryTest.swift; sourceTree = "<group>"; };
@@ -218,6 +236,15 @@
 			path = Environments;
 			sourceTree = "<group>";
 		};
+		304771F62119AC8E0023B65C /* UIVerticalStepper */ = {
+			isa = PBXGroup;
+			children = (
+				304771F22119AC7A0023B65C /* UIVerticalStepper.swift */,
+				304771F32119AC7B0023B65C /* UIVerticalStepper.xib */,
+			);
+			path = UIVerticalStepper;
+			sourceTree = "<group>";
+		};
 		30830DB5210CA2E70003B66C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +253,8 @@
 				30830DB1210C9C450003B66C /* UserViewController.swift */,
 				30830DC52114D0C50003B66C /* ProductsViewController.swift */,
 				30830DC72114D0D80003B66C /* ProductViewController.swift */,
+				30830DD121172CE30003B66C /* CartViewController.swift */,
+				30830DD321172D060003B66C /* CheckOutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,9 +262,11 @@
 		30830DBE210F53A70003B66C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				304771F62119AC8E0023B65C /* UIVerticalStepper */,
 				30830DBF210F53BE0003B66C /* LoadingButton.swift */,
 				30830DCB2114D0F80003B66C /* ProductCell */,
 				30830DD02114D1230003B66C /* ReviewCell */,
+				30830DD921172E2E0003B66C /* CartCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +287,15 @@
 				30830DCD2114D11D0003B66C /* ReviewCell.xib */,
 			);
 			path = ReviewCell;
+			sourceTree = "<group>";
+		};
+		30830DD921172E2E0003B66C /* CartCell */ = {
+			isa = PBXGroup;
+			children = (
+				30830DD521172E1D0003B66C /* CartCell.swift */,
+				30830DD621172E1D0003B66C /* CartCell.xib */,
+			);
+			path = CartCell;
 			sourceTree = "<group>";
 		};
 		30B2FC9120EF621400886DC8 = {
@@ -342,10 +382,11 @@
 		30B2FCCD20F098BD00886DC8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				30B2FD3C20FB871700886DC8 /* Constants.swift */,
 				30B2FCF420F8995200886DC8 /* NetworkResponse.swift */,
 				30B2FCF320F8995200886DC8 /* User.swift */,
 				30B2FD0F20F8A13400886DC8 /* Product.swift */,
-				30B2FD3C20FB871700886DC8 /* Constants.swift */,
+				30830DDA211733590003B66C /* CartItem.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -354,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				30B2FD1820FA256F00886DC8 /* RequestFactory.swift */,
+				30830DDC211736160003B66C /* AppState.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -364,6 +406,7 @@
 				30830DBE210F53A70003B66C /* Views */,
 				30830DB5210CA2E70003B66C /* ViewControllers */,
 				30830DB3210C9CC00003B66C /* Main.storyboard */,
+				30830DDE21173E180003B66C /* Cart.storyboard */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -580,12 +623,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3036EA5E20FB8DA900B40B9A /* addReview.json in Resources */,
+				30830DDF21173E180003B66C /* Cart.storyboard in Resources */,
 				30830DCF2114D11D0003B66C /* ReviewCell.xib in Resources */,
 				30830DC42114D09D0003B66C /* ProductCell.xib in Resources */,
+				30830DD821172E1D0003B66C /* CartCell.xib in Resources */,
 				3036EA5F20FB8DA900B40B9A /* addToBasket.json in Resources */,
 				3036EA6020FB8DA900B40B9A /* approveReview.json in Resources */,
 				3036EA6120FB8DA900B40B9A /* catalogData.json in Resources */,
 				3036EA6220FB8DA900B40B9A /* changeUserData.json in Resources */,
+				304771F52119AC7B0023B65C /* UIVerticalStepper.xib in Resources */,
 				3036EA6320FB8DA900B40B9A /* deleteFromBasket.json in Resources */,
 				30830DB4210C9CC00003B66C /* Main.storyboard in Resources */,
 				3036EA6420FB8DA900B40B9A /* getBasket.json in Resources */,
@@ -738,8 +784,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30830DD421172D060003B66C /* CheckOutViewController.swift in Sources */,
 				30830DC0210F53BE0003B66C /* LoadingButton.swift in Sources */,
 				30B2FD0C20F89E8800886DC8 /* Products.swift in Sources */,
+				30830DDD211736160003B66C /* AppState.swift in Sources */,
 				30830DB2210C9C450003B66C /* UserViewController.swift in Sources */,
 				30B2FD0E20F89EE400886DC8 /* ProductsRequestFactory.swift in Sources */,
 				30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */,
@@ -748,7 +796,9 @@
 				30B2FD1920FA256F00886DC8 /* RequestFactory.swift in Sources */,
 				30B2FD0720F8997500886DC8 /* AbstractRequestFactory.swift in Sources */,
 				30830DC62114D0C50003B66C /* ProductsViewController.swift in Sources */,
+				30830DD721172E1D0003B66C /* CartCell.swift in Sources */,
 				30B2FD0620F8997500886DC8 /* AbstractErrorParser.swift in Sources */,
+				30830DDB211733590003B66C /* CartItem.swift in Sources */,
 				30B2FD0A20F8997500886DC8 /* ResponseCodable.swift in Sources */,
 				30B2FCFC20F8995D00886DC8 /* Auth.swift in Sources */,
 				30B2FCFF20F8995D00886DC8 /* UserDataRequestFactory.swift in Sources */,
@@ -760,12 +810,14 @@
 				30B2FD0820F8997500886DC8 /* ErrorParser.swift in Sources */,
 				30B2FCFD20F8995D00886DC8 /* AuthRequestFactory.swift in Sources */,
 				30B2FD0920F8997500886DC8 /* RequestRouter.swift in Sources */,
+				304771F42119AC7B0023B65C /* UIVerticalStepper.swift in Sources */,
 				30B2FCF620F8995200886DC8 /* NetworkResponse.swift in Sources */,
 				30AC19292103237B00F95960 /* Review.swift in Sources */,
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
 				30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
+				30830DD221172CE30003B66C /* CartViewController.swift in Sources */,
 				30830DCE2114D11D0003B66C /* ReviewCell.swift in Sources */,
 				30830DBB210DFC920003B66C /* SignUpViewController.swift in Sources */,
 				30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */,

@@ -20,6 +20,7 @@ class ProductViewController: UIViewController {
     // MARK: - Private properties
     
     private var reviewsRequest: ReviewRequestFactory!
+    private var cartRequest: CartRequestFactory!
     private var reviews = [String]()
     
     // MARK: - ViewController lifecycle
@@ -28,6 +29,7 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
         
         reviewsRequest = RequestFactory().makeReviewRequestFactory()
+        cartRequest = RequestFactory().makeCartRequestFactory()
         configureTableView()
     }
     
@@ -49,13 +51,20 @@ class ProductViewController: UIViewController {
         tableView.register(UINib(nibName: Nibs.reviewCell, bundle: nil), forCellReuseIdentifier: reviewCellIdentifier)
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 90
+        tableView.estimatedRowHeight = 0
     }
     
     private func loadReviews() {
         // В текущем АПИ нет возможности получить список отзывов о товаре, возвращаем произвольный список
         reviews = ["Awesome", "Total crap !", "Looks nice"]
         tableView.reloadData()
+    }
+    
+    private func addToCart(_ product: Product, quantity: Int) {
+        cartRequest.add(product: product, quantity: quantity) {[weak self] (response) in
+            guard let value = response.value else { return }
+            // TODO: Show success alert
+        }
     }
 }
 

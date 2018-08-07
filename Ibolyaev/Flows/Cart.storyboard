@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oj-kM-Dat">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart-->
+        <scene sceneID="nHt-MY-egV">
+            <objects>
+                <viewController title="Cart" id="7Oj-kM-Dat" customClass="CartViewController" customModule="Ibolyaev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tM1-Wr-syY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7E-Eg-mId">
+                                <rect key="frame" x="0.0" y="20" width="375" height="500.5"/>
+                                <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" id="t9U-6h-1ND" customClass="CartCell" customModule="Ibolyaev" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t9U-6h-1ND" id="Uty-Iq-lR8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Oj-kM-Dat" id="Em4-sX-KvV"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-1a-3W5">
+                                <rect key="frame" x="163" y="522" width="48" height="30"/>
+                                <state key="normal" title="Pay &gt;&gt;">
+                                    <color key="titleColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="payTouchUpInside:" destination="7Oj-kM-Dat" eventType="touchUpInside" id="EAq-74-CU3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y7E-Eg-mId" firstAttribute="height" secondItem="tM1-Wr-syY" secondAttribute="height" multiplier="3:4" id="2mJ-us-Gwd"/>
+                            <constraint firstItem="nO5-1a-3W5" firstAttribute="firstBaseline" secondItem="y7E-Eg-mId" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="Fz9-IG-DgX"/>
+                            <constraint firstItem="y7E-Eg-mId" firstAttribute="leading" secondItem="M1c-gM-Xn9" secondAttribute="leading" id="OOj-aU-r7D"/>
+                            <constraint firstItem="nO5-1a-3W5" firstAttribute="centerX" secondItem="tM1-Wr-syY" secondAttribute="centerX" id="WFl-Wq-sWt"/>
+                            <constraint firstItem="y7E-Eg-mId" firstAttribute="trailing" secondItem="M1c-gM-Xn9" secondAttribute="trailing" id="kwY-ZX-n9P"/>
+                            <constraint firstItem="y7E-Eg-mId" firstAttribute="top" secondItem="M1c-gM-Xn9" secondAttribute="top" id="xOY-ly-IOb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M1c-gM-Xn9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ewp-ho-VBj"/>
+                    <connections>
+                        <outlet property="tableView" destination="y7E-Eg-mId" id="ebx-1o-BKv"/>
+                        <segue destination="2eA-j0-st0" kind="show" identifier="checkOut" id="12K-NN-ARD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1g-rB-kH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="105"/>
+        </scene>
+        <!--Check Out View Controller-->
+        <scene sceneID="Frz-1i-G3v">
+            <objects>
+                <viewController id="2eA-j0-st0" customClass="CheckOutViewController" customModule="Ibolyaev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="kg9-vo-5uN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HSo-Yg-2Al">
+                                <rect key="frame" x="162" y="296" width="51.5" height="75.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVZ-Lc-x3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k10-gW-PZT">
+                                        <rect key="frame" x="0.0" y="39.5" width="51.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="tintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Pay"/>
+                                        <connections>
+                                            <action selector="payTouchUpInside:" destination="2eA-j0-st0" eventType="touchUpInside" id="ZvR-S7-Hez"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HSo-Yg-2Al" firstAttribute="centerY" secondItem="kg9-vo-5uN" secondAttribute="centerY" id="LJw-Ug-0m1"/>
+                            <constraint firstItem="HSo-Yg-2Al" firstAttribute="centerX" secondItem="kg9-vo-5uN" secondAttribute="centerX" id="SrS-te-qgQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5wY-da-Ncm"/>
+                    </view>
+                    <connections>
+                        <outlet property="sumLabel" destination="IVZ-Lc-x3E" id="knI-oy-qtN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ea-cp-ZAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="105"/>
+        </scene>
+    </scenes>
+</document>

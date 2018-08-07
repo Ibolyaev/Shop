@@ -40,6 +40,12 @@ struct CartDeleteResult: Codable {
     let result: Int
 }
 
+struct CartGetResult: Codable {
+    let contents: [CartItem]
+    let amount: Int
+    let countGoods: Int
+}
+
 struct ProductListResult: Codable {
     let pageNumber: Int
     let products: [Product]
