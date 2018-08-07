@@ -2,7 +2,7 @@ import UIKit
 
 // Отвечает за вход пользователя в систему
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Trackable {
     
     // MARK: - IBOutlet
     
@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
                 self?.stopAnimations()
             }
             if let user = result.value?.user {
+                self?.track(.login(method: .email, success: true))
                 AppState.shared.user = user
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.showProducts, sender: nil)

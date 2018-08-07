@@ -22,6 +22,9 @@
 		304771F42119AC7B0023B65C /* UIVerticalStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304771F22119AC7A0023B65C /* UIVerticalStepper.swift */; };
 		304771F52119AC7B0023B65C /* UIVerticalStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304771F32119AC7B0023B65C /* UIVerticalStepper.xib */; };
 		3063835B20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */; };
+		306C4ADC211D8E89005F5F7A /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C4ADB211D8E89005F5F7A /* Trackable.swift */; };
+		306C4ADE211D8ED9005F5F7A /* AnaliticEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C4ADD211D8ED9005F5F7A /* AnaliticEvents.swift */; };
+		306C4AE2211DC5E9005F5F7A /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C4AE1211DC5E9005F5F7A /* Alertable.swift */; };
 		30830DAA210C7FC80003B66C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DA9210C7FC80003B66C /* Cart.swift */; };
 		30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */; };
 		30830DAE210C96BF0003B66C /* CartRequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */; };
@@ -89,6 +92,8 @@
 		33FBC8A4A9B889315BEC73B3 /* Pods_IbolyaevUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5B2C5C011B5A7E0A5E8DD1 /* Pods_IbolyaevUITests.framework */; };
 		AA3195C01AF7F6BBDD03069E /* Pods_IbolyaevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014255F7AC60A366F787A8F1 /* Pods_IbolyaevTests.framework */; };
 		BAE0C8AEB6BF00296D25E4F4 /* Pods_Ibolyaev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */; };
+		BD4C635B2117660600284203 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4C635A2117660600284203 /* Product.storyboard */; };
+		BD4C635D21176A5300284203 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C635C21176A5300284203 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +123,9 @@
 		304771F22119AC7A0023B65C /* UIVerticalStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalStepper.swift; sourceTree = "<group>"; };
 		304771F32119AC7B0023B65C /* UIVerticalStepper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIVerticalStepper.xib; sourceTree = "<group>"; };
 		3063835A20FC7F8C00B9E312 /* ProductsRequestFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactoryTest.swift; sourceTree = "<group>"; };
+		306C4ADB211D8E89005F5F7A /* Trackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
+		306C4ADD211D8ED9005F5F7A /* AnaliticEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticEvents.swift; sourceTree = "<group>"; };
+		306C4AE1211DC5E9005F5F7A /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		30830DA9210C7FC80003B66C /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		30830DAB210C7FEA0003B66C /* CartRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactory.swift; sourceTree = "<group>"; };
 		30830DAD210C96BF0003B66C /* CartRequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactoryTests.swift; sourceTree = "<group>"; };
@@ -190,6 +198,8 @@
 		6F39D796C62BF47F93DA1D58 /* Pods_Ibolyaev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ibolyaev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9A216D6E3E3B3C8FF3333E /* Pods-IbolyaevUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A0969F44DEBE7CA03D452C15 /* Pods-IbolyaevUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4C635A2117660600284203 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		BD4C635C21176A5300284203 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C86FB597C55D9FBF0496E1E0 /* Pods-IbolyaevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbolyaevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +253,39 @@
 				304771F32119AC7B0023B65C /* UIVerticalStepper.xib */,
 			);
 			path = UIVerticalStepper;
+			sourceTree = "<group>";
+		};
+		306C4AD9211D8E57005F5F7A /* Analitics */ = {
+			isa = PBXGroup;
+			children = (
+				306C4ADA211D8E69005F5F7A /* Protocols */,
+				306C4ADD211D8ED9005F5F7A /* AnaliticEvents.swift */,
+			);
+			path = Analitics;
+			sourceTree = "<group>";
+		};
+		306C4ADA211D8E69005F5F7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				306C4ADB211D8E89005F5F7A /* Trackable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		306C4ADF211DC56B005F5F7A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				306C4AE0211DC588005F5F7A /* Protocols */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		306C4AE0211DC588005F5F7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				306C4AE1211DC5E9005F5F7A /* Alertable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		30830DB5210CA2E70003B66C /* ViewControllers */ = {
@@ -374,6 +417,8 @@
 		30B2FCCC20F098AD00886DC8 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				306C4ADF211DC56B005F5F7A /* Alert */,
+				306C4AD9211D8E57005F5F7A /* Analitics */,
 				30B2FCF720F8995D00886DC8 /* Network */,
 			);
 			path = BussinessLogic;
@@ -387,6 +432,7 @@
 				30B2FCF320F8995200886DC8 /* User.swift */,
 				30B2FD0F20F8A13400886DC8 /* Product.swift */,
 				30830DDA211733590003B66C /* CartItem.swift */,
+				BD4C635C21176A5300284203 /* Colors.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -407,6 +453,7 @@
 				30830DB5210CA2E70003B66C /* ViewControllers */,
 				30830DB3210C9CC00003B66C /* Main.storyboard */,
 				30830DDE21173E180003B66C /* Cart.storyboard */,
+				BD4C635A2117660600284203 /* Product.storyboard */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -522,6 +569,8 @@
 				30B2FC9820EF621400886DC8 /* Resources */,
 				CAB495534E3B9B76C9AD9E9A /* [CP] Embed Pods Frameworks */,
 				30AC192F21047F6300F95960 /* ShellScript */,
+				7260BEB0F4934B503B4BD7F9 /* [CP] Copy Pods Resources */,
+				BD4C635921175A7800284203 /* Run Script Fabric */,
 			);
 			buildRules = (
 			);
@@ -541,6 +590,7 @@
 				30B2FCAB20EF621400886DC8 /* Frameworks */,
 				30B2FCAC20EF621400886DC8 /* Resources */,
 				13028BAF26DF9ADDCAA624AC /* [CP] Embed Pods Frameworks */,
+				2271CDE7B9F66924F8978EB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -560,6 +610,8 @@
 				30B2FCB520EF621400886DC8 /* Sources */,
 				30B2FCB620EF621400886DC8 /* Frameworks */,
 				30B2FCB720EF621400886DC8 /* Resources */,
+				36FDDC257BC89B68A0B8FED5 /* [CP] Embed Pods Frameworks */,
+				4B10C91E54C4D82A1986335B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -638,6 +690,7 @@
 				3036EA6520FB8DA900B40B9A /* getGoodById.json in Resources */,
 				3036EA6620FB8DA900B40B9A /* logout.json in Resources */,
 				3036EA6720FB8DA900B40B9A /* registerUser.json in Resources */,
+				BD4C635B2117660600284203 /* Product.storyboard in Resources */,
 				3036EA6820FB8DA900B40B9A /* removeReview.json in Resources */,
 				30B2FD3B20FB85F600886DC8 /* login.json in Resources */,
 				30B2FCA820EF621400886DC8 /* LaunchScreen.storyboard in Resources */,
@@ -692,6 +745,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2271CDE7B9F66924F8978EB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevTests/Pods-IbolyaevTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30AC192F21047F6300F95960 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,6 +772,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		36FDDC257BC89B68A0B8FED5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B10C91E54C4D82A1986335B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IbolyaevUITests/Pods-IbolyaevUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7260BEB0F4934B503B4BD7F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibolyaev/Pods-Ibolyaev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		AC64906224CB6F969A11ACB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -759,6 +872,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD4C635921175A7800284203 /* Run Script Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Fabric";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a437f1425921b4f454a4903ab63495e07325c3ab ab20787e0dbf697598c796f5f8a1f261d2b12da42cf834d39e2c6786662f8e9f";
+		};
 		CAB495534E3B9B76C9AD9E9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -788,6 +915,7 @@
 				30830DC0210F53BE0003B66C /* LoadingButton.swift in Sources */,
 				30B2FD0C20F89E8800886DC8 /* Products.swift in Sources */,
 				30830DDD211736160003B66C /* AppState.swift in Sources */,
+				306C4ADE211D8ED9005F5F7A /* AnaliticEvents.swift in Sources */,
 				30830DB2210C9C450003B66C /* UserViewController.swift in Sources */,
 				30B2FD0E20F89EE400886DC8 /* ProductsRequestFactory.swift in Sources */,
 				30830DAC210C7FEA0003B66C /* CartRequestFactory.swift in Sources */,
@@ -803,6 +931,7 @@
 				30B2FCFC20F8995D00886DC8 /* Auth.swift in Sources */,
 				30B2FCFF20F8995D00886DC8 /* UserDataRequestFactory.swift in Sources */,
 				30830DB7210DF01B0003B66C /* BasicFactory.swift in Sources */,
+				306C4AE2211DC5E9005F5F7A /* Alertable.swift in Sources */,
 				30B2FCFE20F8995D00886DC8 /* UserData.swift in Sources */,
 				30B2FD1020F8A13400886DC8 /* Product.swift in Sources */,
 				30830DAA210C7FC80003B66C /* Cart.swift in Sources */,
@@ -815,12 +944,14 @@
 				30AC19292103237B00F95960 /* Review.swift in Sources */,
 				30B2FC9E20EF621400886DC8 /* AppDelegate.swift in Sources */,
 				30AC192B2103239400F95960 /* ReviewRequestFactory.swift in Sources */,
+				BD4C635D21176A5300284203 /* Colors.swift in Sources */,
 				30B2FD1220F8A68D00886DC8 /* Configuration.swift in Sources */,
 				30B2FCF520F8995200886DC8 /* User.swift in Sources */,
 				30830DD221172CE30003B66C /* CartViewController.swift in Sources */,
 				30830DCE2114D11D0003B66C /* ReviewCell.swift in Sources */,
 				30830DBB210DFC920003B66C /* SignUpViewController.swift in Sources */,
 				30B2FD3D20FB871700886DC8 /* Constants.swift in Sources */,
+				306C4ADC211D8E89005F5F7A /* Trackable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,6 +1121,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Ibolyaev/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = ibo.Ibolyaev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1005,6 +1137,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Ibolyaev/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = ibo.Ibolyaev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

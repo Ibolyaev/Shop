@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
   - OHHTTPStubs/Core (6.1.0)
   - OHHTTPStubs/Default (6.1.0):
     - OHHTTPStubs/Core
@@ -17,20 +20,18 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Crashlytics
+  - Fabric
   - OHHTTPStubs/Swift
   - SwiftLint
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - OHHTTPStubs
-    - SwiftLint
-
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: a5a6d1fe99990d0b202fdca214be0636ecb15613
+PODFILE CHECKSUM: f511aaa93e4d2e6c97078e07fdc1d6a4be9efc6e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0

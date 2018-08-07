@@ -1,8 +1,9 @@
 import UIKit
+import Crashlytics
 
 // Отвечает за регистрацию пользователя
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, Trackable {
     
     // MARK: - IBOutlet
     
@@ -42,6 +43,7 @@ class SignUpViewController: UIViewController {
                 self?.stopAnimations()
             }
             if reponse.value?.result == 1 {
+                self?.track(.signUp(method: .email, success: true))
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
                 }
