@@ -1,6 +1,6 @@
 import UIKit
 
-class ProductsViewController: UITableViewController {
+class ProductsViewController: UITableViewController, Trackable {
     
     // MARK: - Identifiers
     
@@ -22,6 +22,11 @@ class ProductsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateProducts()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        track(.contentView(content: .productList, id: nil))
     }
     
     // MARK: - Private methods

@@ -1,7 +1,6 @@
 import UIKit
-import Crashlytics
 
-class CartViewController: UIViewController {
+class CartViewController: UIViewController, Trackable, Alertable {
     
     // MARK: - Identifiers
     
@@ -59,6 +58,9 @@ class CartViewController: UIViewController {
     private func getTotalSum() -> Int {
         return cartItems.reduce(0) { $0 + $1.quantity * $1.price }
     }
+    private func getTotalItems() -> Int {
+        return cartItems.reduce(0) { $0 + $1.quantity }
+    }
     
     private func checkOut() {
         performSegue(withIdentifier: SegueIdentifiers.checkOut, sender: nil)
@@ -66,8 +68,11 @@ class CartViewController: UIViewController {
     
     private func removeProduct(_ product: Product) {
         cartRequest.remove(product: product) {[weak self] (response) in
-            guard let value = response.value else { return }
-            // TODO: Show success alert
+            guard response.value != nil else { return }
+            DispatchQueue.main.async {
+                self?.showAlertWithTitle("Cart", message: "Item have been succesfully removed from the cart")
+            }
+            self?.track(.removeFromCart(product: product))
         }
     }
     
@@ -77,6 +82,7 @@ class CartViewController: UIViewController {
         if segue.identifier == SegueIdentifiers.checkOut,
             let checkOutVC = segue.destination as? CheckOutViewController {
             checkOutVC.sum = getTotalSum()
+            checkOutVC.items = getTotalItems()
         }
     }
 }

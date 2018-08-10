@@ -1,7 +1,6 @@
 import UIKit
-import Crashlytics
 
-class ProductViewController: UIViewController {
+class ProductViewController: UIViewController, Trackable, Alertable {
     
     @IBAction func addToCartTouchUpInside(_ sender: UIButton) {
         guard let product = self.product else { return }
@@ -39,6 +38,12 @@ class ProductViewController: UIViewController {
         configureTableView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        track(.contentView(content: .product, id: (product?.id.description) ?? ""))
+    }
+    
     // MARK: - Private methods
     
     private func updateProductUI() {
@@ -63,14 +68,11 @@ class ProductViewController: UIViewController {
     
     private func addToCart(_ product: Product, quantity: Int) {
         cartRequest.add(product: product, quantity: quantity) {[weak self] (response) in
-            guard let value = response.value else { return }
-            Answers.logAddToCart(withPrice: NSDecimalNumber(value: product.price),
-                                 currency: "USD",
-                                 itemName: product.name,
-                                 itemType: nil,
-                                 itemId: product.id.description,
-                                 customAttributes: nil)
-            // TODO: Show success alert
+            guard response.value != nil else { return }
+            self?.track(.addToCart(product: product))
+            DispatchQueue.main.async {
+                self?.showAlertWithTitle("Cart", message: "Item have been succesfully added to the cart")
+            }
         }
     }
 }

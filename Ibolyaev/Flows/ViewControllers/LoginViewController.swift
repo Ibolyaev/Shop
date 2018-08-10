@@ -1,9 +1,8 @@
 import UIKit
-import Crashlytics
 
 // Отвечает за вход пользователя в систему
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Trackable {
     
     // MARK: - IBOutlet
     
@@ -34,10 +33,7 @@ class LoginViewController: UIViewController {
                 self?.stopAnimations()
             }
             if let user = result.value?.user {
-                Answers.logLogin(withMethod: "Email",
-                                 success: NSNumber(value: 1),
-                                 customAttributes: ["UserName": user.name]
-                )
+                self?.track(.login(method: .email, success: true))
                 AppState.shared.user = user
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.showProducts, sender: nil)

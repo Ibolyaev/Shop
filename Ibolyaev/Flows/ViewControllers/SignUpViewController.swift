@@ -3,7 +3,7 @@ import Crashlytics
 
 // Отвечает за регистрацию пользователя
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, Trackable {
     
     // MARK: - IBOutlet
     
@@ -43,7 +43,7 @@ class SignUpViewController: UIViewController {
                 self?.stopAnimations()
             }
             if reponse.value?.result == 1 {
-                Answers.logSignUp(withMethod: "Email", success: NSNumber(value: 1), customAttributes: nil)
+                self?.track(.signUp(method: .email, success: true))
                 DispatchQueue.main.async {
                     self?.performSegue(withIdentifier: SegueIdentifiers.userInformation, sender: user)
                 }

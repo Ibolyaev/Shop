@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CheckOutViewController: UIViewController {
+class CheckOutViewController: UIViewController, Trackable {
     
     // MARK: - IBOutlet
     
@@ -17,6 +17,7 @@ class CheckOutViewController: UIViewController {
     // MARK: - Public properties
     
     var sum: Int?
+    var items: Int?
     
     // MARK: - ViewController lifecycle
     
@@ -28,6 +29,8 @@ class CheckOutViewController: UIViewController {
     // MARK: - IBAction
     
     @IBAction func payTouchUpInside(_ sender: UIButton) {
+        guard let sum = self.sum, let items = self.items else { return }
+        track(.startCheckout(sum: sum, items: items))
     }
     
     // MARK: - Private methods
