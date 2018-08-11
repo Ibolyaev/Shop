@@ -19,3 +19,4 @@ enum AnaliticEvents {
 enum CartMethods: String {
     case removeFromCart
 }
+

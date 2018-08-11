@@ -38,7 +38,20 @@ extension Trackable {
              currency: "USD",
              itemCount: NSNumber(value: items),
              customAttributes: [:])
- 
         }
     }
+}
+
+func assertionFailureTrackable(_ message: String, file: StaticString = #file, line: UInt = #line) {
+    
+    #if DEBUG
+        Swift.assertionFailure(message, file: file, line: line)
+    #else
+        let customAttributes = [
+            "message": message,
+            "file": NSString(stringLiteral: file),
+            "line": NSNumber(value: line)
+            ] as [String : Any]
+        Answers.logCustomEvent(withName: "assertionFailure", customAttributes: customAttributes)
+    #endif
 }

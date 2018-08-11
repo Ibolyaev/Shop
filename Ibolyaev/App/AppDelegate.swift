@@ -11,8 +11,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
         ) -> Bool {
         Fabric.with([Crashlytics.self, Answers.self])
+        setupAppearance()
+        return true
+    }
+    
+    private func setupAppearance() {
         UITableViewHeaderFooterView.appearance().tintColor = Colors.tint
         UITableView.appearance().tintColor = Colors.tint
-        return true
     }
 }
