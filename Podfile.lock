@@ -25,6 +25,14 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Crashlytics
+    - Fabric
+    - OHHTTPStubs
+    - SwiftLint
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
@@ -34,4 +42,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f511aaa93e4d2e6c97078e07fdc1d6a4be9efc6e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
